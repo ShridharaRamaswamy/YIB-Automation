@@ -1,0 +1,78 @@
+{
+  "Workshop_Assets": [
+    {
+      "feed1_medium_name": "workshop feed1",
+      "feed1_Description": "Feed medium 1 for testing with workshop example",
+      "feed1_medium_composition": [
+        {
+          "name": "beta-D-Glucose",
+          "llimit": "90.0",
+          "hlimit": "90.0",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "feed2_medium_name": "workshop feed2",
+      "feed2_Description": "Feed medium 2 for testing with workshop example",
+      "feed2_medium_composition": [
+        {
+          "name": "L-Alanine",
+          "llimit": "8.9",
+          "hlimit": "8.9",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Glutamate",
+          "llimit": "14.6",
+          "hlimit": "14.6",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "inoculum_medium_name": "workshop inoculum + basal medium",
+      "inoculum_Description": "Inoculum + basal medium for later designs with workshop example",
+      "inoculum_medium_composition": [
+        {
+          "name": "viability",
+          "llimit": "0.0",
+          "hlimit": "100.00",
+          "unit": "%"
+        },
+        {
+          "name": "L-Glutamate",
+          "llimit": "0.0",
+          "hlimit": "1.5",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Alanine",
+          "llimit": "0.0",
+          "hlimit": "1.0",
+          "unit": "g/L"
+        },
+        {
+          "name": "beta-D-Glucose",
+          "llimit": "0.0",
+          "hlimit": "10.0",
+          "unit": "g/L"
+        },
+        {
+          "name": "vcd",
+          "llimit": "0.0",
+          "hlimit": "2000000000.0",
+          "unit": "cells/L"
+        },
+        {
+          "name": "tcd",
+          "llimit": "0.0",
+          "hlimit": "2000000000.0",
+          "unit": "cells/L"
+        }
+
+
+      ]
+    }
+  ]
+}

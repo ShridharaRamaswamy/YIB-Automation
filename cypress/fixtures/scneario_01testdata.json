@@ -1,0 +1,751 @@
+{
+  "scenario_01_Assets": [
+    {
+      "feed2_medium_name": "scenario 01 feed2_001",
+      "feed2_Description": "Feed medium 2 for testing with scenario 01 example",
+      "feed2_medium_composition": [
+        {
+          "name": "L-Cysteine",
+          "llimit": "1.3373518",
+          "hlimit": "1.3373518",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Tyrosine",
+          "llimit": "30.457306",
+          "hlimit": "30.457306",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "feed3_medium_name": "scenario 01 feed3",
+      "feed3_Description": "Feed medium 3 for testing with scenario 01 example",
+      "feed3_medium_composition": [
+        {
+          "name": "L-Alanine",
+          "llimit": "0.11772946",
+          "hlimit": "0.11772946",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Glutamate",
+          "llimit": "14.075815",
+          "hlimit": "14.075815",
+          "unit": "g/L"
+        },
+        {
+          "name": "Glycine",
+          "llimit": "0.13869672",
+          "hlimit": "0.13869672",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Arginine",
+          "llimit": "3.877055",
+          "hlimit": "3.877055",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Asparagine",
+          "llimit": "8.010605",
+          "hlimit": "8.010605",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Aspartate",
+          "llimit": "3.1813393",
+          "hlimit": "3.1813393",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Cysteine",
+          "llimit": "4.125642",
+          "hlimit": "4.125642",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Histidine",
+          "llimit": "1.9176329",
+          "hlimit": "1.9176329",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Isoleucine",
+          "llimit": "7.601747",
+          "hlimit": "7.601747",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Leucine",
+          "llimit": "7.4422464",
+          "hlimit": "7.4422464",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Lysine",
+          "llimit": "5.850959",
+          "hlimit": "5.850959",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Methionine",
+          "llimit": "1.1993699",
+          "hlimit": "1.1993699",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Phenylalanine",
+          "llimit": "2.9314365",
+          "hlimit": "2.9314365",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Proline",
+          "llimit": "3.9147625",
+          "hlimit": "3.9147625",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Serine",
+          "llimit": "5.14081",
+          "hlimit": "5.14081",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Threonine",
+          "llimit": "3.779192",
+          "hlimit": "3.779192",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Tryptophan",
+          "llimit": "1.4824573",
+          "hlimit": "1.4824573",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Valine",
+          "llimit": "4.6197267",
+          "hlimit": "4.6197267",
+          "unit": "g/L"
+        },
+        {
+          "name": "NH4",
+          "llimit": "0.0073433733",
+          "hlimit": "0.0073433733",
+          "unit": "g/L"
+        },
+        {
+          "name": "Pyruvate",
+          "llimit": "0.38913468",
+          "hlimit": "0.38913468",
+          "unit": "g/L"
+        }
+
+      ]
+    },
+    {
+      "inoculum_medium_name": "Scenario_01 inoculum + basal medium",
+      "inoculum_Description": "Inoculum + basal medium for later designs with workshop example",
+      "inoculum_medium_composition": [
+        {
+          "name": "viability",
+          "llimit": "0.0",
+          "hlimit": "100.00",
+          "unit": "%"
+        },
+        {
+          "name": "L-Glutamate",
+          "llimit": "0.0",
+          "hlimit": "1.5",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Alanine",
+          "llimit": "0.0",
+          "hlimit": "1.0",
+          "unit": "g/L"
+        },
+        {
+          "name": "beta-D-Glucose",
+          "llimit": "0.0",
+          "hlimit": "10.0",
+          "unit": "g/L"
+        },
+        {
+          "name": "vcd",
+          "llimit": "0.0",
+          "hlimit": "2000000000.0",
+          "unit": "cells/L"
+        },
+        {
+          "name": "tcd",
+          "llimit": "0.0",
+          "hlimit": "2000000000.0",
+          "unit": "cells/L"
+        }
+
+
+      ]
+    },
+    {
+      "feed4_medium_name": "scenario 01 feed4",
+      "feed4_Description": "Feed medium 4 for testing with scenario 01 example",
+      "feed4_medium_composition": [
+        {
+          "name": "beta-D-Glucose",
+          "llimit": "351.2444",
+          "hlimit": "351.2444",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "feed5_medium_name": "scenario 01 feed5",
+      "feed5_Description": "Feed medium 5 for testing with scenario 01 example",
+      "feed5_medium_composition": [
+        {
+          "name": "L-Cysteine",
+          "llimit": "4.19681",
+          "hlimit": "4.19681",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Tyrosine",
+          "llimit": "31.378513",
+          "hlimit": "31.378513",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "feed6_medium_name": "scenario 01 feed6",
+      "feed6_Description": "Feed medium 6 for testing with scenario 01 example",
+      "feed6_medium_composition": [
+        {
+          "name": "Glycine",
+          "llimit": "0.11836988",
+          "hlimit": "0.11836988",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Alanine",
+          "llimit": "0.09148703",
+          "hlimit": "0.09148703",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Arginine",
+          "llimit": "4.042301",
+          "hlimit": "4.042301",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Asparagine",
+          "llimit": "6.411146",
+          "hlimit": "6.411146",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Aspartate",
+          "llimit": "2.5994167",
+          "hlimit": "2.5994167",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Cysteine",
+          "llimit": "0.9692155",
+          "hlimit": "0.9692155",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Glutamate",
+          "llimit": "10.080589",
+          "hlimit": "10.080589",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Histidine",
+          "llimit": "1.5646468",
+          "hlimit": "1.5646468",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Isoleucine",
+          "llimit": "6.4516454",
+          "hlimit": "6.4516454",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Leucine",
+          "llimit": "5.4004345",
+          "hlimit": "5.4004345",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Lysine",
+          "llimit": "5.076269",
+          "hlimit": "5.076269",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Methionine",
+          "llimit": "0.9318375",
+          "hlimit": "0.9318375",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Phenylalanine",
+          "llimit": "2.254403",
+          "hlimit": "2.254403",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Proline",
+          "llimit": "3.8212159",
+          "hlimit": "3.8212159",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Serine",
+          "llimit": "5.2719593",
+          "hlimit": "5.2719593",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Threonine",
+          "llimit": "3.1383593",
+          "hlimit": "3.1383593",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Tryptophan",
+          "llimit": "1.2698222",
+          "hlimit": "1.2698222",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Valine",
+          "llimit": "3.6403685",
+          "hlimit": "3.6403685",
+          "unit": "g/L"
+        },
+        {
+          "name": "NH4",
+          "llimit": "0.0059105335",
+          "hlimit": "0.0059105335",
+          "unit": "g/L"
+        },
+        {
+          "name": "Pyruvate",
+          "llimit": "0.2859605",
+          "hlimit": "0.2859605",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "feed7_medium_name": "scenario 01 feed7",
+      "feed7_Description": "Feed medium 7 for testing with scenario 01 example",
+      "feed7_medium_composition": [
+        {
+          "name": "Glycine",
+          "llimit": "0.111682944",
+          "hlimit": "0.111682944",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Alanine",
+          "llimit": "0.09197292",
+          "hlimit": "0.09197292",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Arginine",
+          "llimit": "3.2725549",
+          "hlimit": "3.2725549",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Asparagine",
+          "llimit": "6.9204855",
+          "hlimit": "6.9204855",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Aspartate",
+          "llimit": "2.473288",
+          "hlimit": "2.473288",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Cysteine",
+          "llimit": "1.0060098",
+          "hlimit": "1.0060098",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Glutamate",
+          "llimit": "11.636847",
+          "hlimit": "11.636847",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Histidine",
+          "llimit": "1.437177",
+          "hlimit": "1.437177",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Isoleucine",
+          "llimit": "6.6709566",
+          "hlimit": "6.6709566",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Leucine",
+          "llimit": "5.548156",
+          "hlimit": "5.548156",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Lysine",
+          "llimit": "4.656416",
+          "hlimit": "4.656416",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Methionine",
+          "llimit": "0.8482922",
+          "hlimit": "0.8482922",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Phenylalanine",
+          "llimit": "2.0818396",
+          "hlimit": "2.0818396",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Proline",
+          "llimit": "3.0949492",
+          "hlimit": "3.0949492",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Serine",
+          "llimit": "4.2439523",
+          "hlimit": "4.2439523",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Threonine",
+          "llimit": "3.1716793",
+          "hlimit": "3.1716793",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Tryptophan",
+          "llimit": "1.3394432",
+          "hlimit": "1.3394432",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Valine",
+          "llimit": "3.6332362",
+          "hlimit": "3.6332362",
+          "unit": "g/L"
+        },
+        {
+          "name": "NH4",
+          "llimit": "0.006200887",
+          "hlimit": "0.006200887",
+          "unit": "g/L"
+        },
+        {
+          "name": "Pyruvate",
+          "llimit": "0.30112404",
+          "hlimit": "0.30112404",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "feed8_medium_name": "scenario 01 feed8",
+      "feed8_Description": "Feed medium 8 for testing with scenario 01 example",
+      "feed8_medium_composition": [
+        {
+          "name": "Glycine",
+          "llimit": "0.12475143",
+          "hlimit": "0.12475143",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Alanine",
+          "llimit": "0.08296918",
+          "hlimit": "0.08296918",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Arginine",
+          "llimit": "3.7131062",
+          "hlimit": "3.7131062",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Asparagine",
+          "llimit": "8.233817",
+          "hlimit": "8.233817",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Aspartate",
+          "llimit": "2.5938485",
+          "hlimit": "2.5938485",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Cysteine",
+          "llimit": "1.0174413",
+          "hlimit": "1.0174413",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Glutamate",
+          "llimit": "11.15739",
+          "hlimit": "11.15739",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Histidine",
+          "llimit": "1.6160764",
+          "hlimit": "1.6160764",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Isoleucine",
+          "llimit": "7.49666",
+          "hlimit": "7.49666",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Leucine",
+          "llimit": "5.7923055",
+          "hlimit": "5.7923055",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Lysine",
+          "llimit": "4.921107",
+          "hlimit": "4.921107",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Methionine",
+          "llimit": "0.8552631",
+          "hlimit": "0.8552631",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Phenylalanine",
+          "llimit": "2.1934288",
+          "hlimit": "2.1934288",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Proline",
+          "llimit": "3.1808414",
+          "hlimit": "3.1808414",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Serine",
+          "llimit": "4.1715426",
+          "hlimit": "4.1715426",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Threonine",
+          "llimit": "3.2477088",
+          "hlimit": "3.2477088",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Tryptophan",
+          "llimit": "1.3036416",
+          "hlimit": "1.3036416",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Valine",
+          "llimit": "3.734171",
+          "hlimit": "3.734171",
+          "unit": "g/L"
+        },
+        {
+          "name": "NH4",
+          "llimit": "0.0058606244",
+          "hlimit": "0.0058606244",
+          "unit": "g/L"
+        },
+        {
+          "name": "Pyruvate",
+          "llimit": "0.32178",
+          "hlimit": "0.32178",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "feed9_medium_name": "scenario 01 feed9",
+      "feed9_Description": "Feed medium 9 for testing with scenario 01 example",
+      "feed9_medium_composition": [
+        {
+          "name": "Glycine",
+          "llimit": "0.111682944",
+          "hlimit": "0.111682944",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Alanine",
+          "llimit": "0.09197292",
+          "hlimit": "0.09197292",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Arginine",
+          "llimit": "3.2725549",
+          "hlimit": "3.2725549",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Asparagine",
+          "llimit": "6.9204855",
+          "hlimit": "6.9204855",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Aspartate",
+          "llimit": "2.473288",
+          "hlimit": "2.473288",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Cysteine",
+          "llimit": "1.0060098",
+          "hlimit": "1.0060098",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Glutamate",
+          "llimit": "11.636847",
+          "hlimit": "11.636847",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Histidine",
+          "llimit": "1.437177",
+          "hlimit": "1.437177",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Isoleucine",
+          "llimit": "6.6709566",
+          "hlimit": "6.6709566",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Leucine",
+          "llimit": "5.548156",
+          "hlimit": "5.548156",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Lysine",
+          "llimit": "4.656416",
+          "hlimit": "4.656416",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Methionine",
+          "llimit": "0.8482922",
+          "hlimit": "0.8482922",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Phenylalanine",
+          "llimit": "2.0818396",
+          "hlimit": "2.0818396",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Proline",
+          "llimit": "3.0949492",
+          "hlimit": "3.0949492",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Serine",
+          "llimit": "4.2439523",
+          "hlimit": "4.2439523",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Threonine",
+          "llimit": "3.1716793",
+          "hlimit": "3.1716793",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Tryptophan",
+          "llimit": "1.3394432",
+          "hlimit": "1.3394432",
+          "unit": "g/L"
+        },
+        {
+          "name": "L-Valine",
+          "llimit": "3.6332362",
+          "hlimit": "3.6332362",
+          "unit": "g/L"
+        },
+        {
+          "name": "NH4",
+          "llimit": "0.006200887",
+          "hlimit": "0.006200887",
+          "unit": "g/L"
+        },
+        {
+          "name": "Pyruvate",
+          "llimit": "0.30112404",
+          "hlimit": "0.30112404",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "Antifoam_medium_name": "scenario 01 Antifoam",
+      "Antifoam_Description": "Antifoam for testing with scenario 01 example",
+      "Antifoam_medium_composition": [
+        {
+          "name": "Antifoam",
+          "llimit": "1.3373518",
+          "hlimit": "1.3373518",
+          "unit": "g/L"
+        }
+      ]
+    },
+    {
+      "Base_medium_name": "scenario 01 Base",
+      "Base_Description": "Base for testing with scenario 01 example",
+      "Base_medium_composition": [
+        {
+          "name": "Base",
+          "llimit": "1.3373518",
+          "hlimit": "1.3373518",
+          "unit": "g/L"
+        }
+      ]
+    }
+  ]
+}
