@@ -81,6 +81,11 @@ class WorkSpacePage {
     getPmGridExpand() {
         return cy.xpath("//span[@ref='eContracted']");
         }
+    //Get the Product Molecule list
+    getPMlist(){
+      return cy.get("app-assets-assets-landing-page a[href*='product-molecules']");
+    }
+        
   }
   
   export default WorkSpacePage;

@@ -1,0 +1,23 @@
+{
+    "Workshop_ProductMolecules": [
+        {
+            "pm1_name": "workshop feed1",
+            "pm1_Description": "Feed product molecule 1 for testing with workshop example",
+            "pm1_composition": [
+              {
+                "name": "L-Alanine",
+                "llimit": "2.0",
+                "hlimit": "2.0",
+                "unit": " mol_amino_acid/mol_protein"
+              },
+              {
+                "name": "L-Glutamate",
+                "llimit": "1.0",
+                "hlimit": "1.0",
+                "unit": " mol_amino_acid/mol_protein"
+              }
+            ]
+          }
+
+      ]
+    }
