@@ -6,14 +6,12 @@
             "pm1_composition": [
               {
                 "name": "L-Alanine",
-                "llimit": "2.0",
-                "hlimit": "2.0",
+                "value": "2.0",
                 "unit": " mol_amino_acid/mol_protein"
               },
               {
                 "name": "L-Glutamate",
-                "llimit": "1.0",
-                "hlimit": "1.0",
+                "value": "2.0",
                 "unit": " mol_amino_acid/mol_protein"
               }
             ]

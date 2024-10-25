@@ -3,11 +3,12 @@
 /// <reference types="cypress-xpath" />
 import WorkSpacePage from '../support/PageObjects/WorkSpacePage';
 import AddMediumPage from '../support/PageObjects/AddMediumPage';
+import ProductmoleculePage from '../support/PageObjects/ProductmoleculePage';
 
 describe('template spec', () => {
   const addMediumPage = new AddMediumPage();
   const workspacePage = new WorkSpacePage();
-  //const productmoleculePage = new productmoleculePage();
+  const productmoleculePage = new ProductmoleculePage();
   
   let Assetdata;
   before(function () {
@@ -22,7 +23,7 @@ describe('template spec', () => {
   })
 
   beforeEach(() => {
-    cy.fixture('workshoptestdata.json').then((data) => {
+    cy.fixture('product_moleculedata.json').then((data) => {
       Assetdata = data
     })
     cy.restoreLocalStorage()
@@ -60,17 +61,32 @@ describe('template spec', () => {
   });
 
   it('should navigate to the product molecule list', () => {
-    const WorkSpacePage = new WorkSpacePage();
+    //const workspacePage = new WorkSpacePage();
 
-    WorkSpacePage.getPMlist().click(); // Navigate to product molecule list
-    cy.wait(2000)
+    workspacePage.getPMlist().click(); // Navigate to product molecule list
+    cy.wait(4000)
   });
 
-  it('Addition of workshop product molecule',()=> {
+  it('Add workshop product molecule',()=> {
   
     productmoleculePage.getAddpmBtn().click(); // click on add product molecule button
+    cy.wait(2500)
+    productmoleculePage.getPMname().type(Assetdata.Workshop_ProductMolecules[0].pm1_name);
+    cy.wait(2000)
+    productmoleculePage.getPMdes().type(Assetdata.Workshop_ProductMolecules[0].pm1_Description);
+    cy.wait(2000)
+    productmoleculePage.getAddPMcompBtn().click(); //click on add components button in product molecule page
     cy.wait(2000)
     
+
+    cy.Add_pm_components(2,0,
+      Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].name,
+      Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].value,
+      Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].unit)
+      
+      productmoleculePage.getSaveBtn().click()
+    
+
   })
 
 })

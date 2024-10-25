@@ -31,6 +31,7 @@ import "cypress-real-events";
 import WorkSpacePage from '../support/PageObjects/WorkSpacePage';
 import AddMediumPage from '../support/PageObjects/AddMediumPage';
 import loginpage from "../support/PageObjects/loginpage";
+import ProductmoleculePage from "./PageObjects/ProductmoleculePage";
 before(() => {
   cy.fixture("../fixtures/workshoptestdata.json").as("data");
   cy.get("@data").then((data) => {
@@ -93,6 +94,37 @@ before(() => {
       addMediumPage.getAddMediumCompHlimit(comcount).type(hlimit)
 
       addMediumPage.getAddMediumCompUnit(comcount).click({ timeout: 3000 });
+      cy.wait(3000)
+
+      cy.wait(1000)
+      cy.xpath("//app-assets-add-mediums-form//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
+      cy.wait(2000)
+
+    });
+    Cypress.Commands.add("Add_pm_components", (comcount, scroll, component, limit, unit) => {
+      const addMediumPage = new AddMediumPage();
+      const workspacePage = new WorkSpacePage();
+      const productmoleculePage = new ProductmoleculePage();
+
+      productmoleculePage.getAddPMcompBtn().click(); // Add the medium
+      // Add additional assertions or interactions here as needed
+      cy.wait(2000)
+
+      productmoleculePage.getAddPMCompSpeciesDropDown(comcount).scrollIntoView().click({ timeout: 3000 });
+
+      cy.wait(3000)
+      cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+        $dropdown[0].scrollTop = scroll; // Manually scroll 500px down
+      });
+
+      cy.wait(1000)
+      cy.xpath("//app-assets-add-mediums-form//div[@role='option']//div[contains(text(),'" + component + "')]").scrollIntoView().click({ force: true })
+      cy.wait(3000)
+    
+      productmoleculePage.getAddPMComplimit(comcount).click({ timeout: 3000 });
+      productmoleculePage.getAddPMComplimit(comcount).type(limit)
+
+      productmoleculePage.getAddPMCompUnit(comcount).click({ timeout: 3000 });
       cy.wait(3000)
 
       cy.wait(1000)
