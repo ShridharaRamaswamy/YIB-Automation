@@ -1,0 +1,14 @@
+{
+    "Assets_Controllers": [
+        {
+            "controller1_name": "workshop sampling controller",
+            "controller1_Description": "sampling controller for test with workshop example data",
+            "Controller1_cultivation_values": [
+              {
+                "llimit":"200.20",
+                "hlimit":"300.30"
+              }
+            ]
+          }
+      ]
+    }

@@ -32,6 +32,11 @@ import WorkSpacePage from '../support/PageObjects/WorkSpacePage';
 import AddMediumPage from '../support/PageObjects/AddMediumPage';
 import loginpage from "../support/PageObjects/loginpage";
 import ProductmoleculePage from "./PageObjects/ProductmoleculePage";
+import SensorPage from "./PageObjects/SensorPage";
+import SpargingGas from "./PageObjects/SpargingGas";
+import ControllersPage from "./PageObjects/ControllersPage";
+import ReactorPage from "./PageObjects/ReactorPage";
+import RetentionPage from "./PageObjects/RetentionPage";
 before(() => {
   cy.fixture("../fixtures/workshoptestdata.json").as("data");
   cy.get("@data").then((data) => {
@@ -106,7 +111,7 @@ before(() => {
       const workspacePage = new WorkSpacePage();
       const productmoleculePage = new ProductmoleculePage();
 
-      productmoleculePage.getAddPMcompBtn().click(); // Add the medium
+      productmoleculePage.getAddPMcompBtn().click(); // Add the product molecule
       // Add additional assertions or interactions here as needed
       cy.wait(2000)
 
@@ -118,7 +123,7 @@ before(() => {
       });
 
       cy.wait(1000)
-      cy.xpath("//app-assets-add-mediums-form//div[@role='option']//div[contains(text(),'" + component + "')]").scrollIntoView().click({ force: true })
+      cy.xpath("//div[@role='option']//div[contains(text(),'" + component + "')]").scrollIntoView().click({ force: true })
       cy.wait(3000)
     
       productmoleculePage.getAddPMComplimit(comcount).click({ timeout: 3000 });
@@ -128,7 +133,164 @@ before(() => {
       cy.wait(3000)
 
       cy.wait(1000)
-      cy.xpath("//app-assets-add-mediums-form//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
+      cy.xpath("//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
+      cy.wait(2000)
+
+    });
+    Cypress.Commands.add("Add_sensor_components", (comcount, scroll,scrollunit, component, llimit, hlimit, unit) => {
+      const addMediumPage = new AddMediumPage();
+      const workspacePage = new WorkSpacePage();
+      const sensorPage = new SensorPage();
+
+      sensorPage.getAddSenEntBtn().click(); // Add the sensor entities button
+      // Add additional assertions or interactions here as needed
+      cy.wait(2000)
+
+      sensorPage.getSenEntDropDown(comcount).scrollIntoView().click({ timeout: 3000 });
+
+      cy.wait(3000)
+      cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+        $dropdown[0].scrollTop = scroll; // Manually scroll 500px down
+      });
+
+      cy.wait(2000)
+      cy.xpath("//app-assets-sensor-form//div[@role='option']//div[contains(text(),'" + component + "')]").scrollIntoView().click({ force: true }
+      );
+      cy.wait(3000)
+
+      sensorPage.getAddSenLlimit(comcount).click({ timeout: 3000 });
+      sensorPage.getAddSenLlimit(comcount).type(llimit)
+
+      sensorPage.getAddSenCompHlimit(comcount).click({ timeout: 3000 });
+      sensorPage.getAddSenCompHlimit(comcount).type(hlimit)
+
+      cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+        $dropdown[0].scrollTop = scrollunit; // Manually scroll 500px down
+      });
+
+      sensorPage.getAddSenCompUnit(comcount).click({ timeout: 3000 });
+      cy.wait(3000)
+      
+      cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+        $dropdown[0].scrollTop = scroll; // Manually scroll 500px down
+      });
+
+      cy.wait(1000)
+      cy.xpath("//app-assets-sensor-form//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
+      cy.wait(2000)
+
+    });
+    Cypress.Commands.add("Add_sparging_gas_components", (comcount, scroll, component, llimit, hlimit, unit) => {
+      const spargingGas = new SpargingGas();
+
+      spargingGas.getAddSGCompBtn().click(); // click the sparging gas component 
+      // Add additional assertions or interactions here as needed
+      cy.wait(2000)
+
+      spargingGas.getAddSGCompSpeciesDropDown(comcount).scrollIntoView().click({ timeout: 3000 });
+
+      cy.wait(3000)
+      cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+        $dropdown[0].scrollTop = scroll; // Manually scroll 500px down
+      });
+
+      cy.wait(1000)
+      cy.xpath("//app-assets-add-sparging-gases-form//div[@role='option']//div[contains(text(),'" + component + "')]").first().scrollIntoView().click({ force: true });
+      cy.wait(2000)
+      spargingGas.getAddSGCompLlimit(comcount).click({ timeout: 3000 });
+      spargingGas.getAddSGCompLlimit(comcount).type(llimit)
+
+      spargingGas.getAddSGCompHlimit(comcount).click({ timeout: 3000 });
+      spargingGas.getAddSGCompHlimit(comcount).type(hlimit)
+
+      spargingGas.getAddSGCompUnit(comcount).click({ timeout: 3000 });
+      cy.wait(3000)
+
+      cy.wait(1000)
+      cy.xpath("//app-assets-add-sparging-gases-form//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
+      cy.wait(2000)
+
+    });
+    Cypress.Commands.add("Add_controller_limits", (comcount,llimit, hlimit) => {
+      const controllersPage = new ControllersPage();
+      
+      cy.wait(2000)
+      controllersPage.getAddcontrollerLlimit(comcount).click({ timeout: 3000 });
+      controllersPage.getAddcontrollerLlimit(comcount).type(llimit);
+      cy.wait(2000)
+
+      controllersPage.getAddcontrollerHlimit(comcount).click({ timeout: 3000 });
+      controllersPage.getAddcontrollerHlimit(comcount).type(hlimit);
+
+
+      cy.wait(1000)
+
+    });
+    Cypress.Commands.add("Add_reactor_inlets", (comcount, name, scroll, component, llimit, hlimit, unit) => {
+      const addMediumPage = new AddMediumPage();
+      const workspacePage = new WorkSpacePage();
+      const reactorPage = new ReactorPage();
+
+      reactorPage.getAddreactorInletBtn().click(); // click on add inlet button
+      // Add additional assertions or interactions here as needed
+      cy.wait(2000)
+
+      // cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+      //   $dropdown[0].scrollTop = scroll; // Manually scroll 500px down
+      // });
+
+      // cy.wait(1000)
+      // cy.xpath("//app-assets-add-reactor-form//div[@role='option']//div[contains(text(),'" + component + "')]").scrollIntoView().click({ force: true })
+      //cy.wait(3000)
+
+      reactorPage.getAddInletname(comcount).click({ timeout: 1500 })
+      reactorPage.getAddInletname(comcount).type(name)
+      cy.wait(3000)
+      
+      reactorPage.getAddInletLlimit(comcount).click({ timeout: 3000 });
+      reactorPage.getAddInletLlimit(comcount).type(llimit)
+      cy.wait(3000)
+
+      reactorPage.getAddInletHlimit(comcount).click({ timeout: 3000 });
+      reactorPage.getAddInletHlimit(comcount).type(hlimit)
+      cy.wait(3000)
+
+      reactorPage.getAddInletUnit(comcount).click({ timeout: 3000 });
+      cy.wait(3000)
+
+      cy.wait(1000)
+      cy.xpath("//app-assets-add-reactor-form//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
+      cy.wait(2000)
+
+    });
+    Cypress.Commands.add("Add_retention_species", (comcount, scroll, component, llimit, hlimit, unit) => {
+
+      const retentionPage = new RetentionPage();
+
+      retentionPage.getAddretentionspeciesBtn().click(); 
+      cy.wait(2000)
+
+      retentionPage.getAddretentionDropDown(comcount).scrollIntoView().click({ timeout: 3000 });
+
+      cy.wait(3000)
+      cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+        $dropdown[0].scrollTop = scroll; // Manually scroll 500px down
+      });
+
+      cy.wait(1000)
+      cy.xpath("//app-assets-add-retention-system-form//div[@role='option']//div[contains(text(),'" + component + "')]").scrollIntoView().click({ force: true })
+      cy.wait(3000)
+      retentionPage.getAddRetentionLlimit(comcount).click({ timeout: 3000 });
+      retentionPage.getAddRetentionLlimit(comcount).type(llimit)
+
+      retentionPage.getAddretentionHlimit(comcount).click({ timeout: 3000 });
+      retentionPage.getAddretentionHlimit(comcount).type(hlimit)
+
+      retentionPage.getAddretentionUnit(comcount).click({ timeout: 3000 });
+      cy.wait(3000)
+
+      cy.wait(1000)
+      cy.xpath("//app-assets-add-retention-system-form//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
       cy.wait(2000)
 
     });

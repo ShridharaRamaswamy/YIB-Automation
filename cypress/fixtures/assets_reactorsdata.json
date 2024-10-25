@@ -1,0 +1,39 @@
+{
+    "Assets_reactors": [
+        {
+            "reactor1_name": "Asests Reactor",
+            "reactor1_Description": "Reactor 1 for testing with workshop example",
+            "reactor1_Geo_Properties": [
+                {
+                    "MinVessel": "100",
+                    "MaxVessel": "5000",
+                    "Geo_Unit": "L"
+                }
+            ],
+            "reactor1_io": [
+              {
+                "name": "INLET-01",
+                "llimit": "2.0",
+                "hlimit": "2.0",
+                "unit": "L",
+                "notes": "add inlet 1"
+              },
+              {
+                "name": "INLET-02",
+                "llimit": "2.0",
+                "hlimit": "2.0",
+                "unit": "L",
+                "notes": "add inlet 2"
+              },
+              {
+                "name": "OUTLET-01",
+                "llimit": "2.0",
+                "hlimit": "2.0",
+                "unit": "L",
+                "notes": "add outlet 01"
+              }
+            ]
+          }
+
+      ]
+    }

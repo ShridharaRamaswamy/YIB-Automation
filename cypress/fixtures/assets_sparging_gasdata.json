@@ -1,0 +1,17 @@
+{
+    "Assets_sparging_gas": [
+        {
+            "sg1_name": "Assets_sparging_gas",
+            "sg1_Description": "Assets sparging gas 1 testing with example",
+            "sg1_composition": [
+              {
+              "name": "O2",
+              "llimit": "1.3373518",
+              "hlimit": "1.3373518",
+               "unit": "%[mol/mol]"
+              }
+            ]
+          }
+
+      ]
+    }

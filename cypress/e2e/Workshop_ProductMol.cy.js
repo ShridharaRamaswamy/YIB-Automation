@@ -61,10 +61,19 @@ describe('template spec', () => {
   });
 
   it('should navigate to the product molecule list', () => {
-    //const workspacePage = new WorkSpacePage();
 
     workspacePage.getPMlist().click(); // Navigate to product molecule list
     cy.wait(4000)
+  });
+
+  it('Should check the product molecule grid headers', ()=> {
+
+    workspacePage.getPMGridName().should('be.visible');
+    workspacePage.getPMGridGlycosylation().should('be.visible');
+    workspacePage.getPMGridChargeVariant().should('be.visible');
+    workspacePage.getPMGridNotes().should('be.visible');
+    workspacePage.getPmGridExpand().eq(0).click();
+    cy.wait(2000)
   });
 
   it('Add workshop product molecule',()=> {
@@ -75,18 +84,20 @@ describe('template spec', () => {
     cy.wait(2000)
     productmoleculePage.getPMdes().type(Assetdata.Workshop_ProductMolecules[0].pm1_Description);
     cy.wait(2000)
-    productmoleculePage.getAddPMcompBtn().click(); //click on add components button in product molecule page
-    cy.wait(2000)
+    //productmoleculePage.getAddPMcompBtn().click(); //click on add components button in product molecule page
+    //cy.wait(2000)
     
-
     cy.Add_pm_components(2,0,
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].name,
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].value,
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].unit)
-      
+    cy.Add_pm_components(3,0,
+      Assetdata.Workshop_ProductMolecules[0].pm1_composition[1].name,
+      Assetdata.Workshop_ProductMolecules[0].pm1_composition[1].value,
+      Assetdata.Workshop_ProductMolecules[0].pm1_composition[1].unit)
+
       productmoleculePage.getSaveBtn().click()
     
-
   })
 
 })

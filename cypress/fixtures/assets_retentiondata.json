@@ -1,0 +1,16 @@
+{
+    "Assets_Retention": [
+        {
+            "ret_name": "(AUT)Retention assets",
+            "ret_Description": "Add Retention test automation",
+            "ret_species": [
+              {
+                "name": "beta-D-Glucose",
+                "llimit": "90.0",
+                "hlimit": "99.99",
+                "unit": "%"
+              }
+            ]
+          }
+      ]
+    }

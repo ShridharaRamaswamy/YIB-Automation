@@ -1,0 +1,94 @@
+{
+    "Workshop_Sensors": [
+        {
+            "sensor1_name": "workshop temperature sensor",
+            "sensor1_Description": "Temperature sensor for testing with workshop example",
+            "sensor1_composition": [
+                {
+                  "name": "temperature",
+                  "llimit": "36.0",
+                  "hlimit": "39.0",
+                  "unit": "temperature - °C"
+                }
+    ]},
+
+          {
+            "sensor2_name": "workshop spent media analyzer",
+            "sensor2_Description": "Spent media analyzer for testing with workshop example",
+            "sensor2_composition": [
+              {
+                "name": "L-Alanine",
+                "llimit": "0.0",
+                "hlimit": "10.0",
+                "unit": "Product (workshop) - g/L"
+              },
+              {
+                "name": "L-Glutamine",
+                "llimit": "0.0",
+                "hlimit": "10.0",
+                "unit": "Product (workshop) - g/L"
+              },
+              {
+                "name": "L-Lactate",
+                "llimit": "0.0",
+                "hlimit": "10.0",
+                "unit": "Product (workshop) - g/L"
+              },
+              {
+                "name": "Product",
+                "llimit": "0.0",
+                "hlimit": "10.0",
+                "unit": "Product (workshop) - g/L"
+              },
+              {
+                "name": "beta-D-Glucose",
+                "llimit": "0.0",
+                "hlimit": "10.0",
+                "unit": "Product (workshop) - g/L"
+              }
+  ]
+          },
+            {
+            "sensor3_name": "workshop reactor scale",
+            "sensor3_Description": "Reactor scale for measuring reactor volume for testing with workshop example",
+            "sensor3_composition": [
+                {
+                  "name": "reactor_volume",
+                  "llimit": "0.0",
+                  "hlimit": "3.0",
+                  "unit": "reactor volume - L"
+                }
+    ]},
+    {
+      "sensor4_name": "workshop cell counter",
+      "sensor4_Description": "Cell counter for testing with workshop example",
+      "sensor4_composition": [
+        {
+          "name": "vcd",
+          "llimit": "0.0",
+          "hlimit": "20000000000.0",
+          "unit": "vcd (workshop) - cells/L"
+        },
+        {
+          "name": "tcd",
+          "llimit": "0.0",
+          "hlimit": "20000000000.0",
+          "unit": "tcd (workshop) - cells/L"
+        },
+        {
+          "name": "viability",
+          "llimit": "0.0",
+          "hlimit": "100.0",
+          "unit": "viability (workshop) - cells/L"
+        },
+        {
+          "name": "average_cell_diameter",
+          "llimit": "0.0",
+          "hlimit": "20.0",
+          "unit": "average_cell_diameter - µm"
+        }
+        ]
+    }
+
+      ]
+ }

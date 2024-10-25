@@ -22,15 +22,15 @@ class ProductmoleculePage{
 
     // Get the Composition Species DropDown in the grid (second row, first cell)
     getAddPMCompSpeciesDropDown(compcount) {
-      return cy.xpath("//app-assets-add-mediums-form//div[contains(@class,'composition')]//div[@aria-rowindex=" + compcount + "]//div[contains(@role,'gridcell')][1]");
+      return cy.xpath("//app-assets-add-product-molecule//div[contains(@class,'composition')]//div[@aria-rowindex=" + compcount + "]//div[contains(@role,'gridcell')][1]");
   }
     // Get the Composition Limit (second row, third cell)
     getAddPMComplimit(compcount) {
-      return cy.xpath("//app-assets-add-mediums-form//div[contains(@class,'composition')]//div[@aria-rowindex=" + compcount + "]//div[contains(@role,'gridcell')][3]");
+      return cy.xpath("//app-assets-add-product-molecule//div[contains(@class,'composition')]//div[@aria-rowindex=" + compcount + "]//div[contains(@role,'gridcell')][2]");
   }
     // Get the Composition Unit (second row, fourth cell)
     getAddPMCompUnit(compcount) {
-      return cy.xpath("//app-assets-add-mediums-form//div[contains(@class,'composition')]//div[@aria-rowindex=" + compcount + "]//div[contains(@role,'gridcell')][4]");
+      return cy.xpath("//app-assets-add-product-molecule//div[contains(@class,'composition')]//div[@aria-rowindex=" + compcount + "]//div[contains(@role,'gridcell')][3]");
   }
 
     //Get the save button in product molecule page

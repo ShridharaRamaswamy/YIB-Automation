@@ -7,12 +7,12 @@
               {
                 "name": "L-Alanine",
                 "value": "2.0",
-                "unit": " mol_amino_acid/mol_protein"
+                "unit": "mol amino acid / mol protein"
               },
               {
                 "name": "L-Glutamate",
                 "value": "2.0",
-                "unit": " mol_amino_acid/mol_protein"
+                "unit": "mol amino acid / mol protein"
               }
             ]
           }
