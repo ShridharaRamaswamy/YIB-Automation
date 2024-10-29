@@ -101,11 +101,11 @@ describe('template spec', () => {
     cy.wait(1000)
 
 
-    cy.Add_controller_limits(2,0,
+    cy.Add_controller_limits(2,
       Assetdata.Assets_Controllers[0].Controller1_cultivation_values[0].llimit,
       Assetdata.Assets_Controllers[0].Controller1_cultivation_values[0].hlimit)
   
-    controllersPage.getConSavetBtn().click()
+    controllersPage.getConSavetBtn().click();
      cy.wait(1000)
     
   });

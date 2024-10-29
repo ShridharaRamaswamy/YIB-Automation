@@ -58,7 +58,7 @@ describe('template spec', () => {
 
   });
 
-  it('should navigate to the Controllers list', () => {
+  it('should navigate to the reactors list', () => {
 
     workspacePage.getReactorList().click(); // Navigate to Reactor list
     cy.wait(4000)
@@ -104,19 +104,28 @@ describe('template spec', () => {
     reactorPage.getreactorinlets().click();
     cy.wait(1000)
 
-    cy.Add_reactor_inlets(2,0,
+    cy.Add_reactor_inlets(2,
       Assetdata.Assets_reactors[0].reactor1_io[0].name,
       Assetdata.Assets_reactors[0].reactor1_io[0].llimit,
       Assetdata.Assets_reactors[0].reactor1_io[0].hlimit,
-      Assetdata.Assets_reactors[0].reactor1_io[0].unit,
-      Assetdata.Assets_reactors[0].reactor1_io[0].notes),
+      Assetdata.Assets_reactors[0].reactor1_io[0].unit)
+      //Assetdata.Assets_reactors[0].reactor1_io[0].notes),
 
-    cy.Add_reactor_inlets(3,0,
+    cy.Add_reactor_inlets(3,
       Assetdata.Assets_reactors[0].reactor1_io[1].name,
       Assetdata.Assets_reactors[0].reactor1_io[1].llimit,
       Assetdata.Assets_reactors[0].reactor1_io[1].hlimit,
-      Assetdata.Assets_reactors[0].reactor1_io[1].unit,
-      Assetdata.Assets_reactors[0].reactor1_io[1].notes)
+      Assetdata.Assets_reactors[0].reactor1_io[1].unit),
+      //Assetdata.Assets_reactors[0].reactor1_io[1].notes)
+
+    reactorPage.getreactoroutlets().click();
+    cy.wait(1000)
+
+    cy.Add_reactor_outlets(2,
+      Assetdata.Assets_reactors[0].reactor1_io[2].name,
+      Assetdata.Assets_reactors[0].reactor1_io[2].llimit,
+      Assetdata.Assets_reactors[0].reactor1_io[2].hlimit,
+      Assetdata.Assets_reactors[0].reactor1_io[2].unit)
 
     reactorPage.getreactorSavetBtn().click()
     cy.wait(1000)

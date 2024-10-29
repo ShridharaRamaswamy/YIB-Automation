@@ -1,12 +1,12 @@
 {
     "Assets_Cells": [
         {
-            "cell1_name": "(AUT)workshop cell",
+            "cell1_name": "(Aut)workshop cell",
             "cell1_Description": "cell for test with workshop example data"
           },
 
           {
-            "cell2_name": "(AUT)scenario 01 cell",
+            "cell2_name": "(Aut)scenario 01 cell",
             "cell2_Description": "cell for test with scenario 01 example data"
           }
 

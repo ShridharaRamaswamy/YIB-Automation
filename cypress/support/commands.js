@@ -137,7 +137,7 @@ before(() => {
       cy.wait(2000)
 
     });
-    Cypress.Commands.add("Add_sensor_components", (comcount, scroll,scrollunit, component, llimit, hlimit, unit) => {
+    Cypress.Commands.add("Add_sensor_components", (comcount, scroll, component, llimit, hlimit, unit) => {
       const addMediumPage = new AddMediumPage();
       const workspacePage = new WorkSpacePage();
       const sensorPage = new SensorPage();
@@ -164,9 +164,9 @@ before(() => {
       sensorPage.getAddSenCompHlimit(comcount).click({ timeout: 3000 });
       sensorPage.getAddSenCompHlimit(comcount).type(hlimit)
 
-      cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
-        $dropdown[0].scrollTop = scrollunit; // Manually scroll 500px down
-      });
+      // cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+      //   $dropdown[0].scrollTop = scrollunit; // Manually scroll 500px down
+      // });
 
       sensorPage.getAddSenCompUnit(comcount).click({ timeout: 3000 });
       cy.wait(3000)
@@ -213,35 +213,24 @@ before(() => {
     });
     Cypress.Commands.add("Add_controller_limits", (comcount,llimit, hlimit) => {
       const controllersPage = new ControllersPage();
-      
       cy.wait(2000)
+      
       controllersPage.getAddcontrollerLlimit(comcount).click({ timeout: 3000 });
       controllersPage.getAddcontrollerLlimit(comcount).type(llimit);
       cy.wait(2000)
 
       controllersPage.getAddcontrollerHlimit(comcount).click({ timeout: 3000 });
-      controllersPage.getAddcontrollerHlimit(comcount).type(hlimit);
-
-
+      controllersPage.getAddcontrollerHlimit(comcount).type(hlimit).type('{enter}');      
       cy.wait(1000)
 
     });
-    Cypress.Commands.add("Add_reactor_inlets", (comcount, name, scroll, component, llimit, hlimit, unit) => {
+    Cypress.Commands.add("Add_reactor_inlets", (comcount, name, llimit, hlimit, unit ) => {
       const addMediumPage = new AddMediumPage();
       const workspacePage = new WorkSpacePage();
       const reactorPage = new ReactorPage();
 
-      reactorPage.getAddreactorInletBtn().click(); // click on add inlet button
-      // Add additional assertions or interactions here as needed
+      reactorPage.getAddreactorInletBtn().click(); 
       cy.wait(2000)
-
-      // cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
-      //   $dropdown[0].scrollTop = scroll; // Manually scroll 500px down
-      // });
-
-      // cy.wait(1000)
-      // cy.xpath("//app-assets-add-reactor-form//div[@role='option']//div[contains(text(),'" + component + "')]").scrollIntoView().click({ force: true })
-      //cy.wait(3000)
 
       reactorPage.getAddInletname(comcount).click({ timeout: 1500 })
       reactorPage.getAddInletname(comcount).type(name)
@@ -258,9 +247,51 @@ before(() => {
       reactorPage.getAddInletUnit(comcount).click({ timeout: 3000 });
       cy.wait(3000)
 
-      cy.wait(1000)
-      cy.xpath("//app-assets-add-reactor-form//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
+      cy.xpath("//app-assets-add-reactor-form//div[@role='option']//div[contains(text(),'" + unit + "')]").first().click({ force: true })
       cy.wait(2000)
+
+      // reactorPage.getAddInletNotes(comcount).click({timeout:1500});
+      // reactorPage.getAddInletNotes(comcount).type(notes)
+      // cy.wait(2000)
+
+    });
+    Cypress.Commands.add("Add_reactor_outlets", (comcount,  name, llimit, hlimit, unit ) => {
+      const workspacePage = new WorkSpacePage();
+      const reactorPage = new ReactorPage();
+
+      // cy.wait(3000)
+      // cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
+      //   $dropdown[0].scrollTop = scroll; // Manually scroll 500px down
+      // });
+
+      //cy.scrollTo('bottom');
+
+      reactorPage.getAddreactorOutletBtn().click(); 
+      cy.wait(2000)
+
+      cy.scrollTo('bottom',{ensureScrollable: false});
+
+      reactorPage.getAddOutletname(comcount).click({ timeout: 1500 })
+      reactorPage.getAddOutletname(comcount).type(name)
+      cy.wait(3000)
+      
+      reactorPage.getAddOutletLlimit(comcount).click({ timeout: 3000 });
+      reactorPage.getAddOutletLlimit(comcount).type(llimit)
+      cy.wait(3000)
+
+      reactorPage.getAddOutletHlimit(comcount).click({ timeout: 3000 });
+      reactorPage.getAddOutletHlimit(comcount).type(hlimit)
+      cy.wait(3000)
+
+      reactorPage.getAddOutletUnit(comcount).click({ timeout: 3000 });
+      cy.wait(3000)
+
+      cy.xpath("//app-assets-add-reactor-form//div[@role='option']//div[contains(text(),'" + unit + "')]").first().click({ force: true })
+      cy.wait(2000)
+
+      // reactorPage.getAddInletNotes(comcount).click({timeout:1500});
+      // reactorPage.getAddInletNotes(comcount).type(notes)
+      // cy.wait(2000)
 
     });
     Cypress.Commands.add("Add_retention_species", (comcount, scroll, component, llimit, hlimit, unit) => {

@@ -25,7 +25,7 @@ class CellPage {
 
      //Get the cells product molecule & radio button element
      getCellsPM() {
-        return cy.xpath("//span[contains(text(),'workshop feed1')]//parent::div[@class='ag-cell-wrapper']/div");
+        return cy.xpath("//span[contains(text(),'(Aut)Product molecules')]//parent::div[@class='ag-cell-wrapper']/div");
      }
 
      //Get the Add MNM model button element

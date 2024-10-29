@@ -1,8 +1,8 @@
 {
     "Workshop_ProductMolecules": [
         {
-            "pm1_name": "workshop feed1",
-            "pm1_Description": "Feed product molecule 1 for testing with workshop example",
+            "pm1_name": "(Aut)Product molecules",
+            "pm1_Description": "Automation Product molecule adding",
             "pm1_composition": [
               {
                 "name": "L-Alanine",
