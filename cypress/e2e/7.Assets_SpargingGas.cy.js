@@ -7,7 +7,7 @@ import ProductmoleculePage from '../support/PageObjects/ProductmoleculePage';
 import CellPage from '../support/PageObjects/CellPage';
 import SpargingGas from '../support/PageObjects/SpargingGas';
 
-describe('template spec', () => {
+describe('Assets - Sparging Gas', () => {
   const addMediumPage = new AddMediumPage();
   const workspacePage = new WorkSpacePage();
   const productmoleculePage = new ProductmoleculePage();

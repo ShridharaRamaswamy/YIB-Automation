@@ -7,7 +7,7 @@ import ProductmoleculePage from '../support/PageObjects/ProductmoleculePage';
 import CellPage from '../support/PageObjects/CellPage';
 import RetentionPage from '../support/PageObjects/RetentionPage';
 
-describe('template spec', () => {
+describe('Assets - Retention System', () => {
   const workspacePage = new WorkSpacePage();
   const retentionPage = new RetentionPage();
   

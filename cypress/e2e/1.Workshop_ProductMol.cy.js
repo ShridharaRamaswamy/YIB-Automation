@@ -5,7 +5,7 @@ import WorkSpacePage from '../support/PageObjects/WorkSpacePage';
 import AddMediumPage from '../support/PageObjects/AddMediumPage';
 import ProductmoleculePage from '../support/PageObjects/ProductmoleculePage';
 
-describe('template spec', () => {
+describe('Assets - Product Molecule', () => {
   const addMediumPage = new AddMediumPage();
   const workspacePage = new WorkSpacePage();
   const productmoleculePage = new ProductmoleculePage();

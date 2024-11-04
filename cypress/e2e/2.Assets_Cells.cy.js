@@ -6,7 +6,7 @@ import AddMediumPage from '../support/PageObjects/AddMediumPage';
 import ProductmoleculePage from '../support/PageObjects/ProductmoleculePage';
 import CellPage from '../support/PageObjects/CellPage';
 
-describe('template spec', () => {
+describe('Assets - Cells', () => {
   const addMediumPage = new AddMediumPage();
   const workspacePage = new WorkSpacePage();
   const productmoleculePage = new ProductmoleculePage();

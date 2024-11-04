@@ -7,7 +7,7 @@ import ProductmoleculePage from '../support/PageObjects/ProductmoleculePage';
 import CellPage from '../support/PageObjects/CellPage';
 import SensorPage from '../support/PageObjects/SensorPage';
 
-describe('template spec', () => {
+describe('Assets - Sensor', () => {
   const addMediumPage = new AddMediumPage();
   const workspacePage = new WorkSpacePage();
   const productmoleculePage = new ProductmoleculePage();

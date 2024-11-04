@@ -4,7 +4,7 @@
 import WorkSpacePage from '../support/PageObjects/WorkSpacePage';
 import AddMediumPage from '../support/PageObjects/AddMediumPage';
 
-describe('template spec', () => {
+describe('Assets - Workshop - Medium', () => {
   const addMediumPage = new AddMediumPage();
   const workspacePage = new WorkSpacePage();
   let Assetdata;

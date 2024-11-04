@@ -9,7 +9,7 @@ import SpargingGas from '../support/PageObjects/SpargingGas';
 import ControllersPage from '../support/PageObjects/ControllersPage';
 import ReactorPage from '../support/PageObjects/ReactorPage';
 
-describe('template spec', () => {
+describe('Assets - Reactors', () => {
     const workspacePage = new WorkSpacePage();
     const controllersPage = new ControllersPage();
     const reactorPage = new ReactorPage();

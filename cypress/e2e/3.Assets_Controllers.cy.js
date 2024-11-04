@@ -8,7 +8,7 @@ import CellPage from '../support/PageObjects/CellPage';
 import SpargingGas from '../support/PageObjects/SpargingGas';
 import ControllersPage from '../support/PageObjects/ControllersPage';
 
-describe('template spec', () => {
+describe('Assets - Controllers', () => {
     const workspacePage = new WorkSpacePage();
     const controllersPage = new ControllersPage();
     
