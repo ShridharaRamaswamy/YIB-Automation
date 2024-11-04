@@ -1,7 +1,7 @@
 {
     "Assets_sparging_gas": [
         {
-            "sg1_name": "Assets_sparging_gas",
+            "sg1_name": "(AUT) Assets_sparging_gas",
             "sg1_Description": "Assets sparging gas 1 testing with example",
             "sg1_composition": [
               {
