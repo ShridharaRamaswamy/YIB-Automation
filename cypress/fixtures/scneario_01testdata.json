@@ -1,7 +1,7 @@
 {
   "scenario_01_Assets": [
     {
-      "feed2_medium_name": "scenario 01 feed2_001",
+      "feed2_medium_name": "(AUT)scenario 01 feed2_001",
       "feed2_Description": "Feed medium 2 for testing with scenario 01 example",
       "feed2_medium_composition": [
         {
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "feed3_medium_name": "scenario 01 feed3",
+      "feed3_medium_name": "(AUT)scenario 01 feed3",
       "feed3_Description": "Feed medium 3 for testing with scenario 01 example",
       "feed3_medium_composition": [
         {
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "inoculum_medium_name": "Scenario_01 inoculum + basal medium",
+      "inoculum_medium_name": "(AUT)Scenario_01 inoculum + basal medium",
       "inoculum_Description": "Inoculum + basal medium for later designs with workshop example",
       "inoculum_medium_composition": [
         {
@@ -190,7 +190,7 @@
       ]
     },
     {
-      "feed4_medium_name": "scenario 01 feed4",
+      "feed4_medium_name": "(AUT)scenario 01 feed4",
       "feed4_Description": "Feed medium 4 for testing with scenario 01 example",
       "feed4_medium_composition": [
         {
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "feed5_medium_name": "scenario 01 feed5",
+      "feed5_medium_name": "(AUT)scenario 01 feed5",
       "feed5_Description": "Feed medium 5 for testing with scenario 01 example",
       "feed5_medium_composition": [
         {
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "feed6_medium_name": "scenario 01 feed6",
+      "feed6_medium_name": "(AUT)scenario 01 feed6",
       "feed6_Description": "Feed medium 6 for testing with scenario 01 example",
       "feed6_medium_composition": [
         {
@@ -346,7 +346,7 @@
       ]
     },
     {
-      "feed7_medium_name": "scenario 01 feed7",
+      "feed7_medium_name": "(AUT)scenario 01 feed7",
       "feed7_Description": "Feed medium 7 for testing with scenario 01 example",
       "feed7_medium_composition": [
         {
@@ -472,7 +472,7 @@
       ]
     },
     {
-      "feed8_medium_name": "scenario 01 feed8",
+      "feed8_medium_name": "(AUT)scenario 01 feed8",
       "feed8_Description": "Feed medium 8 for testing with scenario 01 example",
       "feed8_medium_composition": [
         {
@@ -598,7 +598,7 @@
       ]
     },
     {
-      "feed9_medium_name": "scenario 01 feed9",
+      "feed9_medium_name": "(AUT)scenario 01 feed9",
       "feed9_Description": "Feed medium 9 for testing with scenario 01 example",
       "feed9_medium_composition": [
         {
@@ -724,7 +724,7 @@
       ]
     },
     {
-      "Antifoam_medium_name": "scenario 01 Antifoam",
+      "Antifoam_medium_name": "(AUT)scenario 01 Antifoam",
       "Antifoam_Description": "Antifoam for testing with scenario 01 example",
       "Antifoam_medium_composition": [
         {
@@ -736,7 +736,7 @@
       ]
     },
     {
-      "Base_medium_name": "scenario 01 Base",
+      "Base_medium_name": "(AUT)scenario 01 Base",
       "Base_Description": "Base for testing with scenario 01 example",
       "Base_medium_composition": [
         {

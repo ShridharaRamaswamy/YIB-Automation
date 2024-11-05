@@ -55,6 +55,11 @@ class DeleteAssets {
       return cy.get('app-assets-sensor-actions-cell-renderer button');
     }
 
+    //Get action button of medium
+    getmedActionBtn() {
+      return cy.get('app-assets-medium-actions-cell-renderer button');
+    }
+
     //Get Breadcrumb for assets
     getBreadCrumbAssets() {
         return cy.xpath("//a[contains(text(),'Assets')]");

@@ -340,36 +340,36 @@ describe('Assets - Scenario_01 - Medium', () => {
     cy.wait(3000)
   });
 
-  it('Addition of scenario_01 feed5', () => {
+  // it('Addition of scenario_01 feed5', () => {
 
-    addMediumPage.getAddMediumBtn().click(); // Click to open the add medium form
-    cy.wait(2000)
+  //   addMediumPage.getAddMediumBtn().click(); // Click to open the add medium form
+  //   cy.wait(2000)
 
-    addMediumPage.getAddMediumTitle().should('be.visible');
-    cy.wait(2000)
-    addMediumPage.getAddMediumName().type(Assetdata.scenario_01_Assets[4].feed5_medium_name);
-    cy.wait(2000)
-    addMediumPage.getAddMediumTypeDropdown().click();
-    cy.wait(2000)
-    addMediumPage.getSelectedMediumType().click();
-    cy.wait(2000)
-    addMediumPage.getAddMediumDesc().type(Assetdata.scenario_01_Assets[4].feed5_Description);
-    cy.wait(2000)
+  //   addMediumPage.getAddMediumTitle().should('be.visible');
+  //   cy.wait(2000)
+  //   addMediumPage.getAddMediumName().type(Assetdata.scenario_01_Assets[4].feed5_medium_name);
+  //   cy.wait(2000)
+  //   addMediumPage.getAddMediumTypeDropdown().click();
+  //   cy.wait(2000)
+  //   addMediumPage.getSelectedMediumType().click();
+  //   cy.wait(2000)
+  //   addMediumPage.getAddMediumDesc().type(Assetdata.scenario_01_Assets[4].feed5_Description);
+  //   cy.wait(2000)
 
-    cy.Add_components(2, 500,
-      Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].name,
-      Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].llimit,
-      Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].hlimit,
-      Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].unit)
-    cy.Add_components(3, 500,
-      Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].name,
-      Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].llimit,
-      Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].hlimit,
-      Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].unit)
+  //   cy.Add_components(2, 500,
+  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].name,
+  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].llimit,
+  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].hlimit,
+  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].unit)
+  //   cy.Add_components(3, 500,
+  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].name,
+  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].llimit,
+  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].hlimit,
+  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].unit)
 
-    addMediumPage.AssetSavetBtn().click()
-    cy.wait(3000)
-  });
+  //   addMediumPage.AssetSavetBtn().click();
+  //   cy.wait(3000)
+  // });
 
   it('Addition of scenario_01 feed5', () => {
 

@@ -23,9 +23,9 @@ describe('Assets - Delete', () => {
   })
 
   beforeEach(() => {
-    // cy.fixture('product_moleculedata.json').then((data) => {
-    //   Assetdata = data
-    // })
+    cy.fixture('scneario_01testdata.json').then((data) => {
+      Assetdata = data
+    })
     cy.restoreLocalStorage()
   })
   after(() => {
@@ -254,7 +254,88 @@ describe('Assets - Delete', () => {
     cy.wait(3000)
   });
 
+  it('should navigate to the medium list', () => {
 
+    workspacePage.getMediumList().click(); // Navigate to the medium list
+    cy.wait(2000)
+  });
 
+  it('delete workshop medium ', ()=> {
 
+    deleteAssets.getNameFltr().click();
+    cy.wait(1000)
+    deleteAssets.getFilterSearBox().type('(AUT)workshop feed1');
+    cy.wait(2000)
+    deleteAssets.getFilterApplyBtn().click();
+    cy.wait(2000)
+    deleteAssets.getmedActionBtn().first().click();
+    cy.wait(3000)
+    deleteAssets.getAssetDeleteBtn().click();
+    cy.wait(2000)
+    deleteAssets.getNameFltr().click();
+    cy.wait(1000)
+    deleteAssets.getFilterSearBox().type('(AUT)workshop feed2');
+    cy.wait(2000)
+    deleteAssets.getFilterApplyBtn().click();
+    cy.wait(2000)
+    deleteAssets.getmedActionBtn().first().click();
+    cy.wait(3000)
+    deleteAssets.getAssetDeleteBtn().click();
+    cy.wait(2000)
+    deleteAssets.getNameFltr().click();
+    cy.wait(1000)
+    deleteAssets.getFilterSearBox().type('(AUT)workshop inoculum + basal medium');
+    cy.wait(2000)
+    deleteAssets.getFilterApplyBtn().click();
+    cy.wait(2000)
+    deleteAssets.getmedActionBtn().first().click();
+    cy.wait(3000)
+    deleteAssets.getAssetDeleteBtn().click();
+    cy.wait(2000)
+    deleteAssets.getBreadCrumbAssets().click();
+    cy.wait(3000)
+  });
+
+  it('should navigate to the medium list', () => {
+
+    workspacePage.getMediumList().click(); // Navigate to the medium list
+    cy.wait(2000)
+  });
+
+  it('delete scenario_01 mediums ', ()=> {
+
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[0].feed2_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[1].feed3_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[2].inoculum_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[3].feed4_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[4].feed5_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[5].feed6_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[6].feed7_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[7].feed8_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[8].feed9_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[9].Antifoam_medium_name)
+    cy.wait(3000)
+    cy.search_medium_names(
+      Assetdata.scenario_01_Assets[10].Base_medium_name)
+    cy.wait(3000)
+  });
 })

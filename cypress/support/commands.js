@@ -37,6 +37,7 @@ import SpargingGas from "./PageObjects/SpargingGas";
 import ControllersPage from "./PageObjects/ControllersPage";
 import ReactorPage from "./PageObjects/ReactorPage";
 import RetentionPage from "./PageObjects/RetentionPage";
+import DeleteAssets from "./PageObjects/DeleteAssets";
 before(() => {
   cy.fixture("../fixtures/workshoptestdata.json").as("data");
   cy.get("@data").then((data) => {
@@ -325,6 +326,22 @@ before(() => {
       cy.wait(2000)
 
     });
+    Cypress.Commands.add('search_medium_names', (medium_name) => {
+      const deleteAssets = new DeleteAssets();
+
+      deleteAssets.getNameFltr().click();
+      cy.wait(2000)
+      deleteAssets.getFilterSearBox().type(medium_name);
+      cy.wait(2000)
+      deleteAssets.getFilterApplyBtn().click();
+      cy.wait(2000)
+      deleteAssets.getmedActionBtn().first().click();
+      cy.wait(3000)
+      deleteAssets.getAssetDeleteBtn().click();
+      cy.wait(2000)
+      
+    }
+    )
 
   })
 })

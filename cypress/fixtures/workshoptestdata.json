@@ -1,7 +1,7 @@
 {
   "Workshop_Assets": [
     {
-      "feed1_medium_name": "workshop feed1",
+      "feed1_medium_name": "(AUT)workshop feed1",
       "feed1_Description": "Feed medium 1 for testing with workshop example",
       "feed1_medium_composition": [
         {
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "feed2_medium_name": "workshop feed2",
+      "feed2_medium_name": "(AUT)workshop feed2",
       "feed2_Description": "Feed medium 2 for testing with workshop example",
       "feed2_medium_composition": [
         {
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "inoculum_medium_name": "workshop inoculum + basal medium",
+      "inoculum_medium_name": "(AUT)workshop inoculum + basal medium",
       "inoculum_Description": "Inoculum + basal medium for later designs with workshop example",
       "inoculum_medium_composition": [
         {
