@@ -77,6 +77,20 @@ describe('Assets - Sparging Gas', () => {
     cy.wait(2500)
   });
 
+  it('validate sparging gas name field length ',()=> {
+    
+    
+    spargingGas.getAddSGBtn().click();  //click on add sparging gas button
+    cy.wait(2000)
+    spargingGas.getSGname().type(Assetdata.Assets_sparging_gas[1].sg2_name);
+    cy.wait(2000)
+    spargingGas.getErrorMsg().should('be.visible');
+    cy.wait(1000)
+    spargingGas.getcancelButton().click();
+    cy.wait(1000)
+    
+  });
+
   it('Add Sparging Gas ',()=> {
     
     spargingGas.getAddSGBtn().click();  //click on add sparging gas button
@@ -95,6 +109,12 @@ describe('Assets - Sparging Gas', () => {
     spargingGas.getSGSaveBtn().click()
     cy.wait(1000)
     
+  });
+
+  it('validate the toast message once sparging gas added successfully' ,()=> {
+    
+    spargingGas.getToastMsgSG().should('be.visible');
+    cy.wait(2000) 
   });
   
 
