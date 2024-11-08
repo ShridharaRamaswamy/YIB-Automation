@@ -38,5 +38,25 @@ class ProductmoleculePage{
       return cy.xpath("//app-assets-add-product-molecule//div//p-button[2]// button[contains(text(),'Save')]");
     }
 
+    //get cancel button element * button
+    getCancelBtn(){
+      return cy.xpath("//app-assets-product-molecules//p-dialog//div[1]//div[1]//button[@tabindex='0']")
+    }
+
+    //get cancel button element
+    getcancelButton(){
+    return cy.xpath("//app-assets-add-product-molecule//div//p-button[1]//span[contains(text(),'Cancel')]")
+    }
+    
+    //get error message element
+    getErrorMsg1(){
+      return cy.xpath("//app-assets-add-product-molecule//div[1]//form//div//div[1]//small[contains(text(), ' Max 120 characters allowed.')]")
+    }
+
+    //get toast message element
+    getToastMsg(){
+      return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),' Successfully added')]")
+    }
+
 }
 export default ProductmoleculePage;

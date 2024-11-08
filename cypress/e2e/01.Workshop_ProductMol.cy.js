@@ -76,6 +76,19 @@ describe('Assets - Product Molecule', () => {
     cy.wait(2000)
   });
 
+  it('product molecule name field length validation',()=> {
+  
+    productmoleculePage.getAddpmBtn().click(); // click on add product molecule button
+    cy.wait(2500)
+    productmoleculePage.getPMname().type(Assetdata.Workshop_ProductMolecules[1].pm2_name);
+    cy.wait(2000)
+    productmoleculePage.getErrorMsg1().should('be.visible');
+    cy.wait(2000)
+    productmoleculePage.getCancelBtn().click()
+    
+  })
+
+
   it('Add workshop product molecule',()=> {
   
     productmoleculePage.getAddpmBtn().click(); // click on add product molecule button
@@ -97,7 +110,15 @@ describe('Assets - Product Molecule', () => {
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[1].unit)
 
       productmoleculePage.getSaveBtn().click()
+      cy.wait(500)
+      productmoleculePage.getToastMsg().should('be.visible');
+      cy.wait(2000)
+  });
+
+  it('validate the toast message once added successfully' ,()=> {
     
+      productmoleculePage.getToastMsg().should('be.visible');
+      cy.wait(2000) 
   })
 
 })

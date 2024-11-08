@@ -302,7 +302,7 @@ class WorkSpacePage {
     return cy.xpath("//span[@ref='eContracted']");
   }
 
-  }
+    }
   
   export default WorkSpacePage;
   

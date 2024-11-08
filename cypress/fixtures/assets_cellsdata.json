@@ -8,6 +8,11 @@
           {
             "cell2_name": "(Aut)scenario 01 cell",
             "cell2_Description": "cell for test with scenario 01 example data"
+          },
+
+          {
+            "cell3_name": "(Aut)scenario 01 cell - 12345678900987654321123456789009876543211234567890098765432112345678909876544321342537@#$%%^&&**(("
+            
           }
 
       ]

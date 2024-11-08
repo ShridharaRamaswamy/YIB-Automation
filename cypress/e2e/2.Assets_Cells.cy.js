@@ -46,7 +46,7 @@ describe('Assets - Cells', () => {
 
   })
 
-  it('Select workspace', function () {
+  it('select workspace', function () {
 
     workspacePage.getSideNavWSpace().click();
     workspacePage.getWspaceNameFltr().click();
@@ -66,7 +66,7 @@ describe('Assets - Cells', () => {
     cy.wait(4000)
   });
 
-  it('Should check the cells grid headers', ()=> {
+  it('should check the cells grid headers', ()=> {
 
     workspacePage.getCellsGridName().should('be.visible');
     workspacePage.getCellsGridOrg().should('be.visible');
@@ -79,7 +79,19 @@ describe('Assets - Cells', () => {
     cy.wait(2000)
   });
 
-  it('Add workshop cell',()=> {
+  it('cells name field length validation', ()=> {
+    cellPage.getAddcellsBtn().click(); // click on add cells info button
+    cy.wait(2500)
+    cellPage.getCellname().type(Assetdata.Assets_Cells[2].cell3_name);
+    cy.wait(2000)
+    cellPage.getErrorMsg().should('be.visible');
+    cy.wait(2000)
+    cellPage.getcancelButton().click();
+    cy.wait(500)
+  });
+
+
+  it('add workshop cell',()=> {
   
     cellPage.getAddcellsBtn().click(); // click on add cells info button
     cy.wait(2500)
@@ -104,7 +116,13 @@ describe('Assets - Cells', () => {
     
   });
 
-  it('Add scenario 01 cell',()=> {
+  it('validate the toast message once workshop cell added successfully' ,()=> {
+    
+    cellPage.getToastMsgCells().should('be.visible');
+    cy.wait(2000) 
+  });
+
+  it('add scenario 01 cell',()=> {
   
     cellPage.getAddcellsBtn().click(); // click on add cells info button
     cy.wait(2500)
@@ -127,6 +145,12 @@ describe('Assets - Cells', () => {
     cellPage.getCellsSaveBtn().click()
     cy.wait(1000)
     
+  });
+
+  it('validate the toast message once scenario 01 cell added successfully' ,()=> {
+    
+    cellPage.getToastMsgCells().should('be.visible');
+    cy.wait(2000) 
   });
   
 

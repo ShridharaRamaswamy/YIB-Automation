@@ -58,9 +58,19 @@ class CellPage {
         return cy.xpath("//div[contains(text(),'model_1')]//ancestor::div[@class='ag-rich-select-row']");
      }
 
+      //get error message element
+      getErrorMsg(){
+         return cy.xpath("//app-assets-add-cells-form//form//div//div[1]//small[contains(text(), ' Max 120 characters allowed.')]");
+      }
 
+      //get cancel button element
+      getcancelButton(){
+      return cy.xpath("//app-assets-add-cells-form//div//p-button[1]//span[contains(text(),'Cancel')]");
+      } 
 
-
-     
+      //get toast message element
+      getToastMsgCells(){
+         return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),' Cell Information Added Successfully')]")
+      }
 }
 export default CellPage
