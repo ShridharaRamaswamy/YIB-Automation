@@ -130,28 +130,21 @@ class ReactorPage {
   getAddOutletUnit(compcount) {
       return cy.xpath("//app-assets-add-reactor-form//div[contains(@class,'reactor-info')]//div[@aria-rowindex=" + compcount + "]//div[@role='gridcell' and @col-id='outflux_global_constraint.unit'][1]");
   }
+ 
+  //get error message element
+getErrorMsg(){
+  return cy.xpath("//app-assets-add-reactor-form//form//div[1]//div[1]//div//small[contains(text(),'Max 120 characters allowed.')]");
+}
 
+//get toast message element
+getToastMsg(){
+  return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),'Successfully added')]")
+}
 
-
-// // Reactor Inlet Grid Headers
-// const reactorInletGridName = () => cy.xpath("//app-assets-reactors-inlets//div[@class='ag-header-cell-label']//span[contains(text(),'Name')]");
-// const reactorInletGridLlimit = () => cy.xpath("//app-assets-reactors-inlets//div[@class='ag-header-cell-label']//span[contains(text(),'Low Limit')]");
-// const reactorInletGridHlimit = () => cy.xpath("//app-assets-reactors-inlets//div[@class='ag-header-cell-label']//span[contains(text(),'High Limit')]");
-// const reactorInletGridUnit = () => cy.xpath("//app-assets-reactors-inlets//div[@class='ag-header-cell-label']//span[contains(text(),'Unit')]");
-// const reactorInletGridErr = () => cy.xpath("//app-assets-reactors-inlets//div[@class='ag-header-cell-label']//span[contains(text(),'Error Model')]");
-
-// // Reactor Outlet Grid Tab
-// const reactorOutletGridTab = () => cy.get("app-assets-reactors-shell li a[data-pc-index='1']");
-
-// // Reactor Inlet Grid Tab
-// const reactorInletGridTab = () => cy.get("app-assets-reactors-shell li a[data-pc-index='0']");
-
-// // Reactor Outlet Grid Headers
-// const reactorOutletGridName = () => cy.xpath("//app-assets-reactors-outlets//div[@class='ag-header-cell-label']//span[contains(text(),'Name')]");
-// const reactorOutletGridLlimit = () => cy.xpath("//app-assets-reactors-outlets//div[@class='ag-header-cell-label']//span[contains(text(),'Low Limit')]");
-// const reactorOutletGridHlimit = () => cy.xpath("//app-assets-reactors-outlets//div[@class='ag-header-cell-label']//span[contains(text(),'High Limit')]");
-// const reactorOutletGridUnit = () => cy.xpath("//app-assets-reactors-outlets//div[@class='ag-header-cell-label']//span[contains(text(),'Unit')]");
-// const reactorOutletGridErr = () => cy.xpath("//app-assets-reactors-outlets//div[@class='ag-header-cell-label']//span[contains(text(),'Error Model')]");
+//get cancel button element
+getcancelButton(){
+return cy.xpath("//app-assets-add-reactor-form//div[2]//p-button[1]//button//span[contains(text(),'Cancel')]");
+}
 
 } 
 export default ReactorPage

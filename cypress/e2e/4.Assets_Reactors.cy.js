@@ -77,6 +77,18 @@ describe('Assets - Reactors', () => {
     cy.wait(2500)
   });
 
+  it('validate reactor name field with more than 120 characters', () => {
+
+    reactorPage.getreactorAddBtn().click();  //click on add controller button
+    cy.wait(2000)
+    reactorPage.getreactornamefield().type(Assetdata.Assets_reactors[1].reactor2_name);
+    cy.wait(2000)
+    reactorPage.getErrorMsg().should('be.visible');
+    cy.wait(1000)
+    reactorPage.getcancelButton().click();
+     cy.wait(1000)
+  });
+
   it('Add reactor ',()=> {
     
     reactorPage.getreactorAddBtn().click();  //click on add controller button
@@ -131,6 +143,13 @@ describe('Assets - Reactors', () => {
     cy.wait(1000)
     
   });
+
+  it('validate the toast message once reactor added successfully' ,()=> {
+    
+    reactorPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
+  });
+  
   
 
 })
