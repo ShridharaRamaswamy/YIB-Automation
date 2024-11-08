@@ -77,7 +77,7 @@ describe('Assets - Controllers', () => {
     
     controllersPage.getAddConBtn().click();  //click on add controller button
     cy.wait(2000)
-    controllersPage.getConname().type(Assetdata.Assets_Controllers[0].controller2_name);
+    controllersPage.getConname().type(Assetdata.Assets_Controllers[1].controller2_name);
     cy.wait(2000)
     controllersPage.getErrorMsg().should('be.visible');
     cy.wait(1000)
