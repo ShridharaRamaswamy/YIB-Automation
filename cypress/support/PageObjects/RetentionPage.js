@@ -53,7 +53,7 @@ class RetentionPage {
 
    //get toast message element
    getToastMsg(){
-      return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),'Sparging Gas Information Added Successfully')]")
+      return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),'Successfully added')]")
    }
 
    //get cancel button element

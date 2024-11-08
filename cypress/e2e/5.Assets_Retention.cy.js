@@ -74,6 +74,18 @@ describe('Assets - Retention System', () => {
     cy.wait(2000)
   });
 
+  it('validate retention name field with more than 120 characters', () => {
+
+    retentionPage.getAddRetentionBtn().click(); // click on add retention info button
+    cy.wait(2500)
+    retentionPage.getretentionname().type(Assetdata.Assets_Retention[1].ret1_name);
+    cy.wait(2000)
+    retentionPage.getErrorMsg().should('be.visible');
+    cy.wait(1000)
+    retentionPage.getcancelButton().click();
+     cy.wait(1000)
+  });
+
   it('add retention',()=> {
   
     retentionPage.getAddRetentionBtn().click(); // click on add retention info button
@@ -92,6 +104,13 @@ describe('Assets - Retention System', () => {
       retentionPage.getSaveBtn().click()
     
   });
+
+  it('validate the toast message once reactor added successfully' ,()=> {
+    
+    retentionPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
+  });
+  
   
 
 })
