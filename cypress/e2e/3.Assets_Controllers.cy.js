@@ -73,6 +73,20 @@ describe('Assets - Controllers', () => {
     cy.wait(2500)
   });
 
+  it('validate controller name field length ',()=> {
+    
+    controllersPage.getAddConBtn().click();  //click on add controller button
+    cy.wait(2000)
+    controllersPage.getConname().type(Assetdata.Assets_Controllers[0].controller2_name);
+    cy.wait(2000)
+    controllersPage.getErrorMsg().should('be.visible');
+    cy.wait(1000)
+    controllersPage.getcancelButton().click();
+     cy.wait(1000) 
+  });
+  
+
+
   it('Add Sampling Controller ',()=> {
     
     controllersPage.getAddConBtn().click();  //click on add controller button
@@ -108,6 +122,12 @@ describe('Assets - Controllers', () => {
     controllersPage.getConSavetBtn().click();
      cy.wait(1000)
     
+  });
+
+  it('validate the toast message once controller added successfully' ,()=> {
+    
+    controllersPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
   
 
