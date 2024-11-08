@@ -87,7 +87,7 @@ class SensorPage {
   
      //get cancel button element
      getcancelButton(){
-      return cy.xpath("//app-assets-sensor-form//div[2]//div[2]//p-button[1]//button//span[contains(text(),'Cancel')]");
+      return cy.xpath("//app-assets-sensor-form//div[2]//p-button[1]//button/span[contains(text(),'Cancel')]");
   }
 }
 
