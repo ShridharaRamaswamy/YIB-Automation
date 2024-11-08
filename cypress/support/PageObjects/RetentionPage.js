@@ -58,7 +58,7 @@ class RetentionPage {
 
    //get cancel button element
    getcancelButton(){
-    return cy.xpath("//app-assets-add-retention-system-form//div[2]//div[2]//p-button[1]//button//span[contains(text(),'Cancel')]");
+    return cy.xpath("//app-assets-add-retention-system-form//div[3]//p-button[1]//button//span[contains(text(),'Cancel')]");
 }
 
 
