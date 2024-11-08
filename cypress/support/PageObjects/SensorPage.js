@@ -74,6 +74,21 @@ class SensorPage {
     getSenSaveBtn() {
         return cy.xpath("//app-assets-sensor-form//div//p-button[2]// button[contains(text(),' Save ')]");
      }
+
+     //get error message element
+    getErrorMsg(){
+        return cy.xpath("//app-assets-sensor-form//form//div[1]//div[1]//div//small[contains(text(),'Max 120 characters allowed.')]");
+     }
+  
+     //get toast message element
+     getToastMsg(){
+        return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),' Successfully added Sensor')]")
+     }
+  
+     //get cancel button element
+     getcancelButton(){
+      return cy.xpath("//app-assets-sensor-form//div[2]//div[2]//p-button[1]//button//span[contains(text(),'Cancel')]");
+  }
 }
 
 export default SensorPage

@@ -77,6 +77,19 @@ describe('Assets - Sensor', () => {
 
    });
 
+   it('validate sensor name field with more than 120 characters', () => {
+
+    sensorPage.getAddSenBtn().click()
+    cy.wait(2000)
+    sensorPage.getSenName().type(Assetdata.Workshop_Sensors[4].sensor5_name)
+    cy.wait(1000)
+    sensorPage.getErrorMsg().should('be.visible');
+    cy.wait(1000)
+    sensorPage.getcancelButton().click();
+     cy.wait(1000)
+    
+  });
+
   it('Add workshop temperature sensor',()=> {
 
     cy.wait(5000)
@@ -97,6 +110,11 @@ describe('Assets - Sensor', () => {
     sensorPage.getSenSaveBtn().click()
     cy.wait(2000)
     
+  });
+  it('validate the toast message once sensor added successfully' ,()=> {
+    
+    sensorPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   it('Add workshop spent media analyzer sensor',()=> {
@@ -137,6 +155,12 @@ describe('Assets - Sensor', () => {
     
   });
 
+  it('validate the toast message once sensor added successfully' ,()=> {
+    
+    sensorPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
+  });
+
   it('Add workshop reactor volume sensor',()=> {
 
     sensorPage.getAddSenBtn().click()
@@ -155,6 +179,12 @@ describe('Assets - Sensor', () => {
     sensorPage.getSenSaveBtn().click()
     cy.wait(1000)
     
+  });
+
+  it('validate the toast message once sensor added successfully' ,()=> {
+    
+    sensorPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   it('Add workshop cell counter sensor',()=> {
@@ -187,6 +217,12 @@ describe('Assets - Sensor', () => {
     sensorPage.getSenSaveBtn().click()
     cy.wait(1000)
     
+  });
+
+  it('validate the toast message once sensor added successfully' ,()=> {
+    
+    sensorPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   
