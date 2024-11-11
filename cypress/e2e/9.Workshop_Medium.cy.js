@@ -160,6 +160,13 @@ describe('Assets - Workshop - Medium', () => {
 
 
   });
+
+  it('validate the toast message once medium added successfully' ,()=> {
+    
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
+  });
+
   it('Addition of workshop inoculum', () => {
 
     addMediumPage.getAddMediumBtn().click(); // Click to open the add medium form
@@ -220,4 +227,11 @@ describe('Assets - Workshop - Medium', () => {
     addMediumPage.AssetSavetBtn().click()
     cy.wait(3000)
   });
+
+  it('validate the toast message once medium added successfully' ,()=> {
+    
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
+  });
+
 })

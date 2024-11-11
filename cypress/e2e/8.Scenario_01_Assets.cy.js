@@ -111,8 +111,8 @@ describe('Assets - Scenario_01 - Medium', () => {
       Assetdata.scenario_01_Assets[0].feed2_medium_composition[1].hlimit,
       Assetdata.scenario_01_Assets[0].feed2_medium_composition[1].unit)
     addMediumPage.AssetSavetBtn().click()
-
-
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   it('Addition of scenario_01 feed3', () => {
@@ -251,6 +251,8 @@ describe('Assets - Scenario_01 - Medium', () => {
 
 
     addMediumPage.AssetSavetBtn().click()
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   it('Addition of scenario_01 inoculum', () => {
@@ -312,6 +314,8 @@ describe('Assets - Scenario_01 - Medium', () => {
 
     addMediumPage.AssetSavetBtn().click()
     cy.wait(3000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   it('Addition of scenario_01 feed4', () => {
@@ -338,38 +342,10 @@ describe('Assets - Scenario_01 - Medium', () => {
 
     addMediumPage.AssetSavetBtn().click()
     cy.wait(3000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
-  // it('Addition of scenario_01 feed5', () => {
-
-  //   addMediumPage.getAddMediumBtn().click(); // Click to open the add medium form
-  //   cy.wait(2000)
-
-  //   addMediumPage.getAddMediumTitle().should('be.visible');
-  //   cy.wait(2000)
-  //   addMediumPage.getAddMediumName().type(Assetdata.scenario_01_Assets[4].feed5_medium_name);
-  //   cy.wait(2000)
-  //   addMediumPage.getAddMediumTypeDropdown().click();
-  //   cy.wait(2000)
-  //   addMediumPage.getSelectedMediumType().click();
-  //   cy.wait(2000)
-  //   addMediumPage.getAddMediumDesc().type(Assetdata.scenario_01_Assets[4].feed5_Description);
-  //   cy.wait(2000)
-
-  //   cy.Add_components(2, 500,
-  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].name,
-  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].llimit,
-  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].hlimit,
-  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[0].unit)
-  //   cy.Add_components(3, 500,
-  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].name,
-  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].llimit,
-  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].hlimit,
-  //     Assetdata.scenario_01_Assets[4].feed5_medium_composition[1].unit)
-
-  //   addMediumPage.AssetSavetBtn().click();
-  //   cy.wait(3000)
-  // });
 
   it('Addition of scenario_01 feed5', () => {
 
@@ -400,6 +376,8 @@ describe('Assets - Scenario_01 - Medium', () => {
 
     addMediumPage.AssetSavetBtn().click()
     cy.wait(3000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   it('Addition of scenario_01 feed6', () => {
@@ -531,7 +509,9 @@ describe('Assets - Scenario_01 - Medium', () => {
       Assetdata.scenario_01_Assets[5].feed6_medium_composition[19].unit)
 
     addMediumPage.AssetSavetBtn().click()
-    cy.wait(3000)
+    cy.wait(1000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
   it('Addition of scenario_01 feed7', () => {
 
@@ -662,7 +642,9 @@ describe('Assets - Scenario_01 - Medium', () => {
       Assetdata.scenario_01_Assets[6].feed7_medium_composition[19].unit)
 
     addMediumPage.AssetSavetBtn().click()
-    cy.wait(3000)
+    cy.wait(2000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
   it('Addition of scenario_01 feed8', () => {
 
@@ -794,6 +776,8 @@ describe('Assets - Scenario_01 - Medium', () => {
 
     addMediumPage.AssetSavetBtn().click()
     cy.wait(3000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
   it('Addition of scenario_01 feed9', () => {
 
@@ -925,6 +909,8 @@ describe('Assets - Scenario_01 - Medium', () => {
 
     addMediumPage.AssetSavetBtn().click()
     cy.wait(3000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   it('Addition of scenario_01 Antifoam', () => {
@@ -951,6 +937,8 @@ describe('Assets - Scenario_01 - Medium', () => {
 
     addMediumPage.AssetSavetBtn().click()
     cy.wait(3000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
   it('Addition of scenario_01 Base', () => {
 
@@ -976,5 +964,7 @@ describe('Assets - Scenario_01 - Medium', () => {
 
     addMediumPage.AssetSavetBtn().click()
     cy.wait(3000)
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 })
