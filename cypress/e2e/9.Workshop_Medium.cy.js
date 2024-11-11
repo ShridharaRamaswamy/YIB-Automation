@@ -82,6 +82,18 @@ describe('Assets - Workshop - Medium', () => {
     workspacePage.getCompErr().should('be.visible');
   });
 
+
+  it('validate medium name when more then 120 characters is enetered', () => {
+    addMediumPage.getAddMediumBtn().click(); // Click to open the add medium form
+    cy.wait(2000)
+    addMediumPage.getAddMediumName().type(Assetdata.Workshop_Assets[3].feed3_medium_name);
+    cy.wait(2000)
+    addMediumPage.getErrorMsg().should('be.visible');
+    cy.wait(1000)
+    addMediumPage.getcancelButton().click();
+     cy.wait(1000)
+  });
+
   it('Addition of workshop feed1', () => {
 
     addMediumPage.getAddMediumBtn().click(); // Click to open the add medium form
@@ -109,6 +121,12 @@ describe('Assets - Workshop - Medium', () => {
     addMediumPage.AssetSavetBtn().click()
 
 
+  });
+
+  it('validate the toast message once medium added successfully' ,()=> {
+    
+    addMediumPage.getToastMsg().should('be.visible');
+    cy.wait(2000) 
   });
 
   it('Addition of workshop feed2', () => {

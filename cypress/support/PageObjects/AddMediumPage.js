@@ -97,6 +97,21 @@ class AddMediumPage {
     AssetSavetBtn() {
         return cy.get("app-assets-assets-shell button:contains('Save')")
     }
+
+     //get error message element
+     getErrorMsg(){
+        return cy.xpath("//app-assets-add-mediums-form//form//div[1]//div[1]//div//small[contains(text(),'Max 120 characters allowed.')]");
+     }
+
+    //get toast message element
+    getToastMsg(){
+       return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),' Medium Information Added Successfully')]")
+    }
+
+     //get cancel button element
+    getcancelButton(){
+     return cy.xpath("//app-assets-add-mediums-form//form//div[2]//p-button[1]//button//span[contains(text(),'Cancel')]");
+    }
 }
 
 export default AddMediumPage;
