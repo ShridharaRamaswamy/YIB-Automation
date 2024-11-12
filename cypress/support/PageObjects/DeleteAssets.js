@@ -64,6 +64,11 @@ class DeleteAssets {
     getBreadCrumbAssets() {
         return cy.xpath("//a[contains(text(),'Assets')]");
     }
+
+    //get toast message element
+   getToastMsg(){
+    return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),'Successfully deleted')]")
+ }
       
 }
 export default DeleteAssets
