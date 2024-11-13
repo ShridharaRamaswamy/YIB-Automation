@@ -86,11 +86,11 @@ describe('Assets - Delete', () => {
     deleteAssets.getcellsActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(3500)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(3000)
+    cy.wait(2000)
   });
 
   it('should navigate to the product molecule list', () => {
@@ -114,9 +114,9 @@ describe('Assets - Delete', () => {
     deleteAssets.getAssetDeleteBtn().click();
     cy.wait(2000)
     deleteAssets.getToastMsg().should('be.visible');
-    cy.wait(3000)
+    cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(3000)
+    cy.wait(2000)
   });
 
 

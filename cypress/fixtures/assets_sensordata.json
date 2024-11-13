@@ -17,34 +17,34 @@
             "sensor2_Description": "Spent media analyzer for testing with workshop example",
             "sensor2_composition": [
               {
-                "name": "L-Aspartate",
+                "name": "L-Alanine",
                 "llimit": "0.0",
-                "hlimit": "3.5",
-                "unit": "vcd - cells/L"
-              },
-              {
-                "name": "beta-D-Glucose",
-                "llimit": "2.0",
                 "hlimit": "10.0",
-                "unit": "Product (workshop) - g/L"
+                "unit": "L-Alanine (workshop) - g/L"
               },
               {
                 "name": "L-Glutamate",
-                "llimit": "5.0",
-                "hlimit": "29.9",
-                "unit": "Product (workshop) - g/L"
+                "llimit": "0.0",
+                "hlimit": "10.0",
+                "unit": "L-Glutamate (workshop) - g/L"
+              },
+              {
+                "name": "L-Lactate",
+                "llimit": "0.0",
+                "hlimit": "10.0",
+                "unit": "L-Lactate (workshop) - g/L"
               },
               {
                 "name": "Product",
                 "llimit": "0.0",
                 "hlimit": "10.0",
-                "unit": "Product (workshop) - g/L"
+                "unit": "L-Alanine (workshop) - g/L"
               },
               {
                 "name": "beta-D-Glucose",
                 "llimit": "0.0",
                 "hlimit": "10.0",
-                "unit": "Viability - %"
+                "unit": "beta-D-Glucose (workshop) - g/L"
               }
   ]
           },
@@ -76,16 +76,16 @@
           "unit": "tcd (workshop) - cells/L"
         },
         {
-          "name": "N2",
+          "name": "viability",
           "llimit": "0.0",
           "hlimit": "100.0",
-          "unit": "vcd (workshop) - cells/L"
+          "unit": "concentration - g/L"
         },
         {
-          "name": "Glycine",
+          "name": "average_cell_diameter",
           "llimit": "0.0",
           "hlimit": "20.0",
-          "unit": "reactor volume - L"
+          "unit": "average_cell_diameter - µm"
         }
         ]
     },

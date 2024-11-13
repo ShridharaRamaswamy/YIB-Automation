@@ -126,29 +126,37 @@ describe('Assets - Sensor', () => {
     sensorPage.getSenDes().type(Assetdata.Workshop_Sensors[1].sensor2_Description)
     cy.wait(1000)
 
-    cy.Add_sensor_components(2,900,
+    cy.Add_sensor_components(2,200,
       Assetdata.Workshop_Sensors[1].sensor2_composition[0].name,
       Assetdata.Workshop_Sensors[1].sensor2_composition[0].llimit,
       Assetdata.Workshop_Sensors[1].sensor2_composition[0].hlimit,
       Assetdata.Workshop_Sensors[1].sensor2_composition[0].unit)
 
-    cy.Add_sensor_components(3,0,
+    cy.Add_sensor_components(3,175,
       Assetdata.Workshop_Sensors[1].sensor2_composition[1].name,
       Assetdata.Workshop_Sensors[1].sensor2_composition[1].llimit,
       Assetdata.Workshop_Sensors[1].sensor2_composition[1].hlimit,
       Assetdata.Workshop_Sensors[1].sensor2_composition[1].unit)
       
-    cy.Add_sensor_components(4,0,
+    cy.Add_sensor_components(4,100,
       Assetdata.Workshop_Sensors[1].sensor2_composition[2].name,
       Assetdata.Workshop_Sensors[1].sensor2_composition[2].llimit,
       Assetdata.Workshop_Sensors[1].sensor2_composition[2].hlimit,
       Assetdata.Workshop_Sensors[1].sensor2_composition[2].unit) 
 
-    cy.Add_sensor_components(5,0,
+    cy.Add_sensor_components(5,100,
       Assetdata.Workshop_Sensors[1].sensor2_composition[3].name,
       Assetdata.Workshop_Sensors[1].sensor2_composition[3].llimit,
       Assetdata.Workshop_Sensors[1].sensor2_composition[3].hlimit,
       Assetdata.Workshop_Sensors[1].sensor2_composition[3].unit)
+
+      cy.Add_sensor_components(6,0,
+        Assetdata.Workshop_Sensors[1].sensor2_composition[4].name,
+        Assetdata.Workshop_Sensors[1].sensor2_composition[4].llimit,
+        Assetdata.Workshop_Sensors[1].sensor2_composition[4].hlimit,
+        Assetdata.Workshop_Sensors[1].sensor2_composition[4].unit)
+      
+
 
     sensorPage.getSenSaveBtn().click(),
     cy.wait(1000)
@@ -208,11 +216,17 @@ describe('Assets - Sensor', () => {
       Assetdata.Workshop_Sensors[3].sensor4_composition[1].hlimit,
       Assetdata.Workshop_Sensors[3].sensor4_composition[1].unit)
         
-    cy.Add_sensor_components(4,0,
+    cy.Add_sensor_components(4,50,
       Assetdata.Workshop_Sensors[3].sensor4_composition[2].name,
       Assetdata.Workshop_Sensors[3].sensor4_composition[2].llimit,
       Assetdata.Workshop_Sensors[3].sensor4_composition[2].hlimit,
       Assetdata.Workshop_Sensors[3].sensor4_composition[2].unit)
+
+      cy.Add_sensor_components(5,90,
+        Assetdata.Workshop_Sensors[3].sensor4_composition[3].name,
+        Assetdata.Workshop_Sensors[3].sensor4_composition[3].llimit,
+        Assetdata.Workshop_Sensors[3].sensor4_composition[3].hlimit,
+        Assetdata.Workshop_Sensors[3].sensor4_composition[3].unit) 
 
     sensorPage.getSenSaveBtn().click()
     cy.wait(1000)
@@ -225,7 +239,7 @@ describe('Assets - Sensor', () => {
     cy.wait(2000) 
   });
 
-  
+
   
 
 })

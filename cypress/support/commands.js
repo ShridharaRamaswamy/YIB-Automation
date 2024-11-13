@@ -165,10 +165,6 @@ before(() => {
       sensorPage.getAddSenCompHlimit(comcount).click({ timeout: 3000 });
       sensorPage.getAddSenCompHlimit(comcount).type(hlimit)
 
-      // cy.xpath("//div[contains(@class,'ag-rich-select-virtual-list-viewport')]").then($dropdown => {
-      //   $dropdown[0].scrollTop = scrollunit; // Manually scroll 500px down
-      // });
-
       sensorPage.getAddSenCompUnit(comcount).click({ timeout: 3000 });
       cy.wait(3000)
       
@@ -177,7 +173,7 @@ before(() => {
       });
 
       cy.wait(1000)
-      cy.xpath("//app-assets-sensor-form//div[@role='option']//div[contains(text(),'" + unit + "')]").scrollIntoView().click({ force: true })
+      cy.xpath("//app-assets-sensor-form//div[@role='option']//div[contains(text(),'" + unit + "')]").first().scrollIntoView().click({ force: true })
       cy.wait(2000)
 
     });
@@ -341,7 +337,11 @@ before(() => {
       cy.wait(2000)
       
     }
-    )
+    );
+
+    
+    
+
+})
 
   })
-})
