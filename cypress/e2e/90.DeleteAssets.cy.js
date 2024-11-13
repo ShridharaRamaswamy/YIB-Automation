@@ -318,7 +318,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(3000)
+    cy.wait(2000)
   });
 
   it('should navigate to the medium list', () => {
