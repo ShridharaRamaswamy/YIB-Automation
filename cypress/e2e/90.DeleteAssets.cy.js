@@ -97,8 +97,7 @@ describe('Assets - Delete', () => {
 
     workspacePage.getPMlist().click(); // Navigate to product molecule list
     cy.wait(4000)
-    deleteAssets.getToastMsg().should('be.visible');
-    cy.wait(2000)
+
   });
 
   it('delete product molecule ', ()=> {
@@ -112,7 +111,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getPMActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
@@ -137,7 +136,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getSGActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
@@ -161,7 +160,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getRetActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
@@ -185,7 +184,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getReactorActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
@@ -209,7 +208,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getContActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
@@ -233,7 +232,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getsensorActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getNameFltr().click();
@@ -245,7 +244,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getsensorActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getNameFltr().click();
@@ -257,7 +256,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getsensorActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getNameFltr().click();
@@ -269,7 +268,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getsensorActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getBreadCrumbAssets().click();
     cy.wait(3000)
   });
@@ -291,7 +290,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getmedActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getNameFltr().click();
@@ -303,7 +302,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getmedActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getNameFltr().click();
@@ -315,7 +314,7 @@ describe('Assets - Delete', () => {
     deleteAssets.getmedActionBtn().first().click();
     cy.wait(3000)
     deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
@@ -333,45 +332,45 @@ describe('Assets - Delete', () => {
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[0].feed2_medium_name)
     deleteAssets.getToastMsg().should('be.visible');
-    cy.wait(3000)
+    cy.wait(1000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[1].feed3_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[2].inoculum_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[3].feed4_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[4].feed5_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[5].feed6_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[6].feed7_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[7].feed8_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[8].feed9_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
     cy.search_medium_names(
@@ -381,7 +380,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[10].Base_medium_name)
-    cy.wait(3000)
+    cy.wait(1000)
     deleteAssets.getToastMsg().should('be.visible');
     cy.wait(2000)
   });

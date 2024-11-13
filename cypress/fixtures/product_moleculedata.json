@@ -6,12 +6,97 @@
             "pm1_composition": [
               {
                 "name": "L-Alanine",
-                "value": "2.0",
+                "value": "67.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Asparagine",
+                "value": "53.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Aspartate",
+                "value": "54.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Cysteine",
+                "value": "32.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Glutamine",
+                "value": "63.0",
                 "unit": "mol amino acid / mol protein"
               },
               {
                 "name": "L-Glutamate",
-                "value": "2.0",
+                "value": "54.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "Glycine",
+                "value": "87.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Histidine",
+                "value": "26.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Isoleucine",
+                "value": "31.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Leucine",
+                "value": "98.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Lysine",
+                "value": "90.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Methionine",
+                "value": "11.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Phenylalanine",
+                "value": "46.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Proline",
+                "value": "93.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Serine",
+                "value": "169.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Threonine",
+                "value": "106.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Tryptophan",
+                "value": "23.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Tyrosine",
+                "value": "60.0",
+                "unit": "mol amino acid / mol protein"
+              },
+              {
+                "name": "L-Valine",
+                "value": "120.0",
                 "unit": "mol amino acid / mol protein"
               }
             ]

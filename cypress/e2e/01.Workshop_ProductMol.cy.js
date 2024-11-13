@@ -104,10 +104,82 @@ describe('Assets - Product Molecule', () => {
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].name,
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].value,
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[0].unit)
-    cy.Add_pm_components(3,0,
+    cy.Add_pm_components(3,900,
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[1].name,
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[1].value,
       Assetdata.Workshop_ProductMolecules[0].pm1_composition[1].unit)
+      cy.Add_pm_components(4,900,
+        Assetdata.Workshop_ProductMolecules[0].pm1_composition[2].name,
+        Assetdata.Workshop_ProductMolecules[0].pm1_composition[2].value,
+        Assetdata.Workshop_ProductMolecules[0].pm1_composition[2].unit)
+      cy.Add_pm_components(5,500,
+        Assetdata.Workshop_ProductMolecules[0].pm1_composition[3].name,
+        Assetdata.Workshop_ProductMolecules[0].pm1_composition[3].value,
+        Assetdata.Workshop_ProductMolecules[0].pm1_composition[3].unit)
+        cy.Add_pm_components(6,500,
+          Assetdata.Workshop_ProductMolecules[0].pm1_composition[4].name,
+          Assetdata.Workshop_ProductMolecules[0].pm1_composition[4].value,
+          Assetdata.Workshop_ProductMolecules[0].pm1_composition[4].unit)
+        cy.Add_pm_components(7,0,
+          Assetdata.Workshop_ProductMolecules[0].pm1_composition[5].name,
+          Assetdata.Workshop_ProductMolecules[0].pm1_composition[5].value,
+          Assetdata.Workshop_ProductMolecules[0].pm1_composition[5].unit)
+          cy.Add_pm_components(8,500,
+            Assetdata.Workshop_ProductMolecules[0].pm1_composition[6].name,
+            Assetdata.Workshop_ProductMolecules[0].pm1_composition[6].value,
+            Assetdata.Workshop_ProductMolecules[0].pm1_composition[6].unit)
+          cy.Add_pm_components(9,700,
+            Assetdata.Workshop_ProductMolecules[0].pm1_composition[7].name,
+            Assetdata.Workshop_ProductMolecules[0].pm1_composition[7].value,
+            Assetdata.Workshop_ProductMolecules[0].pm1_composition[7].unit)
+            cy.Add_pm_components(10,900,
+              Assetdata.Workshop_ProductMolecules[0].pm1_composition[8].name,
+              Assetdata.Workshop_ProductMolecules[0].pm1_composition[8].value,
+              Assetdata.Workshop_ProductMolecules[0].pm1_composition[8].unit)
+            cy.Add_pm_components(11,700,
+              Assetdata.Workshop_ProductMolecules[0].pm1_composition[9].name,
+              Assetdata.Workshop_ProductMolecules[0].pm1_composition[9].value,
+              Assetdata.Workshop_ProductMolecules[0].pm1_composition[9].unit)
+              cy.Add_pm_components(12,700,
+                Assetdata.Workshop_ProductMolecules[0].pm1_composition[10].name,
+                Assetdata.Workshop_ProductMolecules[0].pm1_composition[10].value,
+                Assetdata.Workshop_ProductMolecules[0].pm1_composition[10].unit)
+              cy.Add_pm_components(13,900,
+                Assetdata.Workshop_ProductMolecules[0].pm1_composition[11].name,
+                Assetdata.Workshop_ProductMolecules[0].pm1_composition[11].value,
+                Assetdata.Workshop_ProductMolecules[0].pm1_composition[11].unit)
+                cy.Add_pm_components(14,900,
+                  Assetdata.Workshop_ProductMolecules[0].pm1_composition[12].name,
+                  Assetdata.Workshop_ProductMolecules[0].pm1_composition[12].value,
+                  Assetdata.Workshop_ProductMolecules[0].pm1_composition[12].unit)
+                cy.Add_pm_components(15,500,
+                  Assetdata.Workshop_ProductMolecules[0].pm1_composition[13].name,
+                  Assetdata.Workshop_ProductMolecules[0].pm1_composition[13].value,
+                  Assetdata.Workshop_ProductMolecules[0].pm1_composition[13].unit)
+                  cy.Add_pm_components(16,900,
+                    Assetdata.Workshop_ProductMolecules[0].pm1_composition[14].name,
+                    Assetdata.Workshop_ProductMolecules[0].pm1_composition[14].value,
+                    Assetdata.Workshop_ProductMolecules[0].pm1_composition[14].unit)
+                    cy.Add_pm_components(17,400,
+                      Assetdata.Workshop_ProductMolecules[0].pm1_composition[15].name,
+                      Assetdata.Workshop_ProductMolecules[0].pm1_composition[15].value,
+                      Assetdata.Workshop_ProductMolecules[0].pm1_composition[15].unit)
+                    cy.Add_pm_components(18,600,
+                      Assetdata.Workshop_ProductMolecules[0].pm1_composition[16].name,
+                      Assetdata.Workshop_ProductMolecules[0].pm1_composition[16].value,
+                      Assetdata.Workshop_ProductMolecules[0].pm1_composition[16].unit)
+                      cy.Add_pm_components(19,500,
+                        Assetdata.Workshop_ProductMolecules[0].pm1_composition[17].name,
+                        Assetdata.Workshop_ProductMolecules[0].pm1_composition[17].value,
+                        Assetdata.Workshop_ProductMolecules[0].pm1_composition[17].unit)
+                        cy.Add_pm_components(20,500,
+                          Assetdata.Workshop_ProductMolecules[0].pm1_composition[18].name,
+                          Assetdata.Workshop_ProductMolecules[0].pm1_composition[18].value,
+                          Assetdata.Workshop_ProductMolecules[0].pm1_composition[18].unit)
+                        // cy.Add_pm_components(21,500,
+                        //   Assetdata.Workshop_ProductMolecules[0].pm1_composition[19].name,
+                        //   Assetdata.Workshop_ProductMolecules[0].pm1_composition[19].value,
+                        //   Assetdata.Workshop_ProductMolecules[0].pm1_composition[19].unit)
 
       productmoleculePage.getSaveBtn().click()
       cy.wait(500)
