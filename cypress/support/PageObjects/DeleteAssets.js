@@ -66,9 +66,13 @@ class DeleteAssets {
     }
 
     //get toast message element
-   getToastMsg(){
+   getToastMsgpm(){
     return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),'Product molecule successfully deleted')]")
  }
-      
+      //get toast message element
+   getToastMsgcells(){
+    return cy.xpath("//yib-layout-toast//p-toast//div//p-toastitem//div//div//p[contains(text(),'Successfully deleted')]")
+ }
+ 
 }
 export default DeleteAssets

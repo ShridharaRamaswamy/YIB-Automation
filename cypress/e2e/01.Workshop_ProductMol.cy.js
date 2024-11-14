@@ -136,7 +136,7 @@ describe('Assets - Product Molecule', () => {
               Assetdata.Workshop_ProductMolecules[0].pm1_composition[8].name,
               Assetdata.Workshop_ProductMolecules[0].pm1_composition[8].value,
               Assetdata.Workshop_ProductMolecules[0].pm1_composition[8].unit)
-            cy.Add_pm_components(11,700,
+            cy.Add_pm_components(11,500,
               Assetdata.Workshop_ProductMolecules[0].pm1_composition[9].name,
               Assetdata.Workshop_ProductMolecules[0].pm1_composition[9].value,
               Assetdata.Workshop_ProductMolecules[0].pm1_composition[9].unit)
@@ -152,7 +152,7 @@ describe('Assets - Product Molecule', () => {
                   Assetdata.Workshop_ProductMolecules[0].pm1_composition[12].name,
                   Assetdata.Workshop_ProductMolecules[0].pm1_composition[12].value,
                   Assetdata.Workshop_ProductMolecules[0].pm1_composition[12].unit)
-                cy.Add_pm_components(15,500,
+                cy.Add_pm_components(15,400,
                   Assetdata.Workshop_ProductMolecules[0].pm1_composition[13].name,
                   Assetdata.Workshop_ProductMolecules[0].pm1_composition[13].value,
                   Assetdata.Workshop_ProductMolecules[0].pm1_composition[13].unit)
