@@ -333,7 +333,7 @@ before(() => {
       cy.wait(2000)
       deleteAssets.getmedActionBtn().first().click();
       cy.wait(3000)
-      deleteAssets.getAssetDeleteBtn().click();
+      deleteAssets.getAssetDeleteBtn().should('be.visible').click();
       cy.wait(2000)
       
     }
