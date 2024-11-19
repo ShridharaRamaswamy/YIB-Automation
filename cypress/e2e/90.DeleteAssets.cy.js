@@ -75,7 +75,7 @@ describe('Assets - Delete', () => {
     cy.wait(1500)
     deleteAssets.getcellsActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(3000)
     deleteAssets.getNameFltr().click();
     cy.wait(1000)
@@ -85,7 +85,7 @@ describe('Assets - Delete', () => {
     cy.wait(1500)
     deleteAssets.getcellsActionBtn().first().click();
     cy.wait(1000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     //cy.wait(1000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -110,7 +110,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getPMActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     //cy.wait(2000)
     deleteAssets.getToastMsgpm().should('be.visible');
     cy.wait(2000)
@@ -135,7 +135,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getSGActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -159,7 +159,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getRetActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -183,7 +183,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getReactorActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -207,7 +207,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getContActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -231,7 +231,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getsensorActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(1000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -243,7 +243,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getsensorActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -255,7 +255,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getsensorActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -267,7 +267,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getsensorActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getBreadCrumbAssets().click();
     cy.wait(3000)
@@ -289,7 +289,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getmedActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -301,7 +301,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getmedActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
@@ -313,7 +313,7 @@ describe('Assets - Delete', () => {
     cy.wait(2000)
     deleteAssets.getmedActionBtn().first().click();
     cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
+    deleteAssets.getAssetDeleteBtn().click({force:true});
     cy.wait(2000)
     deleteAssets.getToastMsgcells().should('be.visible');
     cy.wait(2000)
