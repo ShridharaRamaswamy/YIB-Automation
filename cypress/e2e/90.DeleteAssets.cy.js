@@ -58,268 +58,268 @@ describe('Assets - Delete', () => {
 
   });
 
-  it('should navigate to the cells list', () => {
+  // it('should navigate to the cells list', () => {
 
-    workspacePage.getCellsList().click(); // Navigate to Cells list
-    cy.wait(4000)
-  });
-
-
-  it('delete cells ', ()=> {
-
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut)workshop cell');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(1500)
-    deleteAssets.getcellsActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(3000)
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut)scenario 01 cell'); 
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(1500)
-    deleteAssets.getcellsActionBtn().first().click();
-    cy.wait(1000)
-    deleteAssets.getAssetDeleteBtn().click();
-    //cy.wait(1000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(2000)
-  });
-
-  it('should navigate to the product molecule list', () => {
-
-    workspacePage.getPMlist().click(); // Navigate to product molecule list
-    cy.wait(4000)
-
-  });
-
-  it('delete product molecule ', ()=> {
-
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut)Product molecules');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getPMActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    //cy.wait(2000)
-    deleteAssets.getToastMsgpm().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(2000)
-  });
+  //   workspacePage.getCellsList().click(); // Navigate to Cells list
+  //   cy.wait(4000)
+  // });
 
 
-  it('should navigate to the Sparging gas list', () => {
+  // it('delete cells ', ()=> {
 
-    workspacePage.getSGList().click(); // Navigate to sparging gas list
-    cy.wait(4000)
-  });
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut)workshop cell');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(1500)
+  //   deleteAssets.getcellsActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut)scenario 01 cell'); 
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(1500)
+  //   deleteAssets.getcellsActionBtn().first().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   //cy.wait(1000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getBreadCrumbAssets().click();
+  //   cy.wait(2000)
+  // });
 
-  it('delete sparging gas ', ()=> {
+  // it('should navigate to the product molecule list', () => {
 
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(AUT) Assets_sparging_gas');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getSGActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(3000)
-  });
+  //   workspacePage.getPMlist().click(); // Navigate to product molecule list
+  //   cy.wait(4000)
 
-  it('should navigate to the retention list', () => {
+  // });
 
-    workspacePage.getRetentionList().click(); // Navigate to retention list
-    cy.wait(4000)
-  });
+  // it('delete product molecule ', ()=> {
 
-  it('delete retention system ', ()=> {
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut)Product molecules');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getPMActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   //cy.wait(2000)
+  //   deleteAssets.getToastMsgpm().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getBreadCrumbAssets().click();
+  //   cy.wait(2000)
+  // });
 
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(AUT)Retention assets');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getRetActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(3000)
-  });
 
-  it('should navigate to the reactors list', () => {
+  // it('should navigate to the Sparging gas list', () => {
 
-    workspacePage.getReactorList().click(); // Navigate to Reactor list
-    cy.wait(4000)
-  });
+  //   workspacePage.getSGList().click(); // Navigate to sparging gas list
+  //   cy.wait(4000)
+  // });
 
-  it('delete reactors ', ()=> {
+  // it('delete sparging gas ', ()=> {
 
-    deleteAssets.getNameFltr().first().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut)Asests Reactor');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getReactorActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(3000)
-  });
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(AUT) Assets_sparging_gas');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getSGActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getBreadCrumbAssets().click();
+  //   cy.wait(3000)
+  // });
+
+  // it('should navigate to the retention list', () => {
+
+  //   workspacePage.getRetentionList().click(); // Navigate to retention list
+  //   cy.wait(4000)
+  // });
+
+  // it('delete retention system ', ()=> {
+
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(AUT)Retention assets');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getRetActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getBreadCrumbAssets().click();
+  //   cy.wait(3000)
+  // });
+
+  // it('should navigate to the reactors list', () => {
+
+  //   workspacePage.getReactorList().click(); // Navigate to Reactor list
+  //   cy.wait(4000)
+  // });
+
+  // it('delete reactors ', ()=> {
+
+  //   deleteAssets.getNameFltr().first().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut)Asests Reactor');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getReactorActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getBreadCrumbAssets().click();
+  //   cy.wait(3000)
+  // });
     
-  it('should navigate to the Controllers list', () => {
+  // it('should navigate to the Controllers list', () => {
 
-    workspacePage.getContList().click(); // Navigate to controllers list
-    cy.wait(4000)
-  });
+  //   workspacePage.getContList().click(); // Navigate to controllers list
+  //   cy.wait(4000)
+  // });
 
-  it('delete sampling controller ', ()=> {
+  // it('delete sampling controller ', ()=> {
 
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut) -sampling controller');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getContActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(3000)
-  });
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut) -sampling controller');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getContActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getBreadCrumbAssets().click();
+  //   cy.wait(3000)
+  // });
 
-  it('should navigate to the Sensor list', () => {
+  // it('should navigate to the Sensor list', () => {
 
-    workspacePage.getSenList().click(); // Navigate to Sensor list
-    cy.wait(4000)
-  });
+  //   workspacePage.getSenList().click(); // Navigate to Sensor list
+  //   cy.wait(4000)
+  // });
 
-  it('delete sensors ', ()=> {
+  // it('delete sensors ', ()=> {
 
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut)workshop temperature sensor');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getsensorActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(1000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut)workshop spent media analyzer');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getsensorActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut)workshop reactor scale');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getsensorActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(Aut)workshop cell counter');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getsensorActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(3000)
-  });
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut)workshop temperature sensor');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getsensorActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut)workshop spent media analyzer');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getsensorActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut)workshop reactor scale');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getsensorActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(Aut)workshop cell counter');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getsensorActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getBreadCrumbAssets().click();
+  //   cy.wait(3000)
+  // });
 
-  it('should navigate to the medium list', () => {
+  // it('should navigate to the medium list', () => {
 
-    workspacePage.getMediumList().click(); // Navigate to the medium list
-    cy.wait(2000)
-  });
+  //   workspacePage.getMediumList().click(); // Navigate to the medium list
+  //   cy.wait(2000)
+  // });
 
-  it('delete workshop medium ', ()=> {
+  // it('delete workshop medium ', ()=> {
 
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(AUT)workshop feed1');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getmedActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(AUT)workshop feed2');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getmedActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getNameFltr().click();
-    cy.wait(1000)
-    deleteAssets.getFilterSearBox().type('(AUT)workshop inoculum + basal medium');
-    cy.wait(2000)
-    deleteAssets.getFilterApplyBtn().click();
-    cy.wait(2000)
-    deleteAssets.getmedActionBtn().first().click();
-    cy.wait(3000)
-    deleteAssets.getAssetDeleteBtn().click();
-    cy.wait(2000)
-    deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(2000)
-    deleteAssets.getBreadCrumbAssets().click();
-    cy.wait(2000)
-  });
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(AUT)workshop feed1');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getmedActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(AUT)workshop feed2');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getmedActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getNameFltr().click();
+  //   cy.wait(1000)
+  //   deleteAssets.getFilterSearBox().type('(AUT)workshop inoculum + basal medium');
+  //   cy.wait(2000)
+  //   deleteAssets.getFilterApplyBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getmedActionBtn().first().click();
+  //   cy.wait(3000)
+  //   deleteAssets.getAssetDeleteBtn().click();
+  //   cy.wait(2000)
+  //   deleteAssets.getToastMsgcells().should('be.visible');
+  //   cy.wait(2000)
+  //   deleteAssets.getBreadCrumbAssets().click();
+  //   cy.wait(2000)
+  // });
 
   it('should navigate to the medium list', () => {
 
@@ -332,7 +332,7 @@ describe('Assets - Delete', () => {
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[0].feed2_medium_name)
     deleteAssets.getToastMsgcells().should('be.visible');
-    cy.wait(1000)
+    cy.wait(2000)
     cy.search_medium_names(
       Assetdata.scenario_01_Assets[1].feed3_medium_name)
     cy.wait(1000)

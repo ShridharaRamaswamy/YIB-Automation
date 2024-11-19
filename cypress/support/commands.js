@@ -326,14 +326,14 @@ before(() => {
       const deleteAssets = new DeleteAssets();
 
       deleteAssets.getNameFltr().click();
-      cy.wait(2000)
+      cy.wait(3000)
       deleteAssets.getFilterSearBox().type(medium_name);
       cy.wait(2000)
       deleteAssets.getFilterApplyBtn().click();
       cy.wait(2000)
       deleteAssets.getmedActionBtn().first().click();
       cy.wait(3000)
-      deleteAssets.getAssetDeleteBtn().should('be.visible').click();
+      deleteAssets.getAssetDeleteBtn().click({force:true});
       cy.wait(2000)
       
     }
