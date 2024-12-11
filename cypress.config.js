@@ -44,7 +44,8 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
 
   env: {
-    url: "https://cloud.appdev.apps.yokogawa.build/app-bdx-host-qa/yibpoc/",
+    url: "https://qa-insilico-suite.westeurope.cloudapp.azure.com/app-bdx-host/yibpoc/",
+    //url: "https://cloud.appdev.apps.yokogawa.build/app-bdx-host-qa/yibpoc/",
     email: "shridhara.ramaswamy@yokogawa.com",
     password: "June@2029",
   

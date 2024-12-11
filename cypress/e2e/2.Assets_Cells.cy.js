@@ -50,7 +50,7 @@ describe('Assets - Cells', () => {
 
     workspacePage.getSideNavWSpace().click();
     workspacePage.getWspaceNameFltr().click();
-    workspacePage.getFilterSearBox().type('Workspace_Init');
+    workspacePage.getFilterSearBox().type('workspace_qa');
     workspacePage.getFilterApplyBtn().click();
     cy.wait(2000)
     workspacePage.getSelectWspace().click();

@@ -301,8 +301,8 @@ class WorkSpacePage {
   getRetentionGridExpand() {
     return cy.xpath("//span[@ref='eContracted']");
   }
-  
-    }
+
+}
   
   export default WorkSpacePage;
   

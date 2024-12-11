@@ -1,0 +1,11 @@
+{
+    "Design_Spec": [
+        {
+        "dt_name": "(AUT)_DT_workshop",
+        "dt_description": "Creating a digital twin using workshop dataset through automation",
+        "group_name": "Workshop_group",
+        "prefix": "YIB",
+        "bio_processes": "1"
+        }
+    ]
+}

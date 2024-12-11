@@ -20,6 +20,7 @@ describe('Assets - Product Molecule', () => {
     cy.wait(4000)
     cy.login(Cypress.env('email'), Cypress.env('password'))
     cy.wait(4000)
+    cy.reload({timeout:80000})
   })
 
   beforeEach(() => {
@@ -41,16 +42,17 @@ describe('Assets - Product Molecule', () => {
   })
 
   afterEach(() => {
+
     cy.saveLocalStorage()
 
 
   })
 
   it('Select workspace', function () {
-
+    cy.reload({timeout: 80000 })
     workspacePage.getSideNavWSpace().click();
     workspacePage.getWspaceNameFltr().click();
-    workspacePage.getFilterSearBox().type('Workspace_Init');
+    workspacePage.getFilterSearBox().type('workspace_qa');
     workspacePage.getFilterApplyBtn().click();
     cy.wait(2000)
     workspacePage.getSelectWspace().click();
