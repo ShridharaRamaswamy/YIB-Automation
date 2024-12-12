@@ -72,9 +72,14 @@ before(() => {
       cy.EnterToken();
       cy.get(".gig-tfa-button").click();
       cy.wait(15000)
+     
       // cy.get('.tenantsList > :nth-child(2) a[class="arrowicon"]').click({ timeout: 65000 })
       // cy.wait(15000);
     });
+
+  
+
+
     Cypress.Commands.add("Add_components", (comcount, scroll, component, llimit, hlimit, unit) => {
       const addMediumPage = new AddMediumPage();
       const workspacePage = new WorkSpacePage();

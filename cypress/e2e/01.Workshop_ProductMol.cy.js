@@ -19,8 +19,10 @@ describe('Assets - Product Molecule', () => {
     cy.removeLocalStorage()
     cy.wait(4000)
     cy.login(Cypress.env('email'), Cypress.env('password'))
+    cy.origin('Cypress.env("url")',() =>{
+    })
     cy.wait(4000)
-    cy.reload({timeout:80000})
+    
   })
 
   beforeEach(() => {
@@ -47,9 +49,11 @@ describe('Assets - Product Molecule', () => {
 
 
   })
-
+ 
   it('Select workspace', function () {
-    cy.reload({timeout: 80000 })
+    const storedUrl = Cypress.env("url");
+    
+
     workspacePage.getSideNavWSpace().click();
     workspacePage.getWspaceNameFltr().click();
     workspacePage.getFilterSearBox().type('workspace_qa');

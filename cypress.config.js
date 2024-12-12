@@ -20,9 +20,10 @@ module.exports = defineConfig({
 
   e2e: {
     testIsolation: false,
+    experimentalSessionAndOrigin: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
-
+      
       require("cypress-localstorage-commands/plugin")(on, config);
       require("cypress-mochawesome-reporter/plugin")(on, config);
       require('@cypress/grep/src/plugin')(config);
